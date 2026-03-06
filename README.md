@@ -1,17 +1,16 @@
-
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,30:0d001a,60:1a0033,100:2d0057&height=280&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=42&stroke=7c3aed&strokeWidth=2&desc=∙%20FULLSTACK%20∙%20AI%20∙%20CYBERSECURITY%20∙%20ROBOTICS%20∙&descSize=14&descAlignY=62&descColor=c4b5fd&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,30:000d1a,60:001a2e,100:003d5c&height=280&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=42&stroke=06b6d4&strokeWidth=2&desc=∙%20FULLSTACK%20∙%20AI%20∙%20CYBERSECURITY%20∙%20ROBOTICS%20∙&descSize=14&descAlignY=62&descColor=a5f3fc&animation=twinkling" width="100%"/>
 </div>
 <div align="center">
 <a href="https://github.com/amanamarjit243222">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=16&duration=2800&pause=600&color=A78BFA&center=true&vCenter=true&repeat=true&width=700&height=40&lines=⟨+Architecting+the+digital+frontier+⟩;⟨+Building+Autonomous+Intelligent+Systems+⟩;⟨+Zero-Trust+Security+%7C+Biometric+AI+⟩;⟨+Human-Machine+Interface+Engineering+⟩;⟨+Where+Code+Meets+Cognition+⟩" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=16&duration=2800&pause=600&color=22d3ee&center=true&vCenter=true&repeat=true&width=700&height=40&lines=⟨+Architecting+the+digital+frontier+⟩;⟨+Building+Autonomous+Intelligent+Systems+⟩;⟨+Zero-Trust+Security+%7C+Biometric+AI+⟩;⟨+Human-Machine+Interface+Engineering+⟩;⟨+Where+Code+Meets+Cognition+⟩" alt="Typing SVG"/>
 </a>
 <br/><br/>
-<a href="https://github.com/amanamarjit243222"><img src="https://img.shields.io/badge/◈_GitHub-amanamarjit243222-090010?style=for-the-badge&logo=github&logoColor=c4b5fd&labelColor=1a0033&color=090010"/></a>
+<a href="https://github.com/amanamarjit243222"><img src="https://img.shields.io/badge/◈_GitHub-amanamarjit243222-000d1a?style=for-the-badge&logo=github&logoColor=a5f3fc&labelColor=001a2e&color=000d1a"/></a>
  
-<img src="https://komarev.com/ghpvc/?username=amanamarjit243222&style=for-the-badge&color=2d0057&label=◈+PROFILE+VIEWS&labelColor=1a0033"/>
+<img src="https://komarev.com/ghpvc/?username=amanamarjit243222&style=for-the-badge&color=003d5c&label=◈+PROFILE+VIEWS&labelColor=001a2e"/>
  
-<img src="https://img.shields.io/github/followers/amanamarjit243222?style=for-the-badge&color=090010&labelColor=1a0033&label=◈+FOLLOWERS&logo=github&logoColor=c4b5fd"/>
+<img src="https://img.shields.io/github/followers/amanamarjit243222?style=for-the-badge&color=000d1a&labelColor=001a2e&label=◈+FOLLOWERS&logo=github&logoColor=a5f3fc"/>
 </div>
 <br/>
 <div align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></div>
@@ -190,13 +189,13 @@ LayerTechnologies⬡  BackendShow Image Show Image Show Image Show Image⬡  A
 <br/>
 ⬡  ENGINEERING METRICS
 <div align="center">
-<img height="185em" src="https://github-readme-stats.vercel.app/api?username=amanamarjit243222&show_icons=true&hide_border=true&bg_color=090010&title_color=c4b5fd&icon_color=7c3aed&text_color=a78bfa&ring_color=5b21b6&include_all_commits=true&count_private=true"/>
+<img height="185em" src="https://github-readme-stats.vercel.app/api?username=amanamarjit243222&show_icons=true&hide_border=true&bg_color=000d1a&title_color=a5f3fc&icon_color=06b6d4&text_color=67e8f9&ring_color=0e7490&include_all_commits=true&count_private=true"/>
 &nbsp;&nbsp;
-<img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanamarjit243222&layout=compact&hide_border=true&bg_color=090010&title_color=c4b5fd&text_color=a78bfa"/>
+<img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanamarjit243222&layout=compact&hide_border=true&bg_color=000d1a&title_color=a5f3fc&text_color=67e8f9"/>
 <br/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=amanamarjit243222&theme=transparent&hide_border=true&background=090010&ring=7c3aed&fire=a78bfa&currStreakLabel=c4b5fd&sideLabels=c4b5fd&dates=6b7280&currStreakNum=ffffff&sideNums=ffffff&stroke=5b21b6" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=amanamarjit243222&theme=transparent&hide_border=true&background=000d1a&ring=06b6d4&fire=22d3ee&currStreakLabel=a5f3fc&sideLabels=a5f3fc&dates=4b7a8a&currStreakNum=ffffff&sideNums=ffffff&stroke=0e7490" />
 <br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=amanamarjit243222&bg_color=090010&color=a78bfa&line=5b21b6&point=c4b5fd&area=true&area_color=1a0033&hide_border=true&custom_title=Contribution%20Topology" width="97%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=amanamarjit243222&bg_color=000d1a&color=67e8f9&line=0e7490&point=a5f3fc&area=true&area_color=001a2e&hide_border=true&custom_title=Contribution%20Topology" width="97%"/>
 </div>
 <br/>
 <div align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"></div>
@@ -220,5 +219,5 @@ LayerTechnologies⬡  BackendShow Image Show Image Show Image Show Image⬡  A
 </div>
 <br/>
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d0057,50:1a0033,100:000000&height=140&section=footer&text=Built%20with%20precision.%20Deployed%20with%20intent.&fontSize=16&fontColor=6b21a8&fontAlignY=55&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:003d5c,50:001a2e,100:000000&height=140&section=footer&text=Built%20with%20precision.%20Deployed%20with%20intent.&fontSize=16&fontColor=0e7490&fontAlignY=55&animation=fadeIn" width="100%"/>
 </div>
