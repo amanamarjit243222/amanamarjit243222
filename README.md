@@ -1,22 +1,29 @@
+<!-- ============================================================
+     AMAN AMARJIT — GitHub Profile README
+     Systems Architect · AI Engineer · Security Researcher
+     ============================================================ -->
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=shark&color=0:000000,40:001824,80:002d40,100:004d6b&height=260&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=48&stroke=00d4e8&strokeWidth=3&desc=FULLSTACK+%7C+AI+%7C+CYBERSECURITY+%7C+ROBOTICS&descSize=15&descAlignY=68&descColor=67e8f9&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:000000,50:001020,100:002040&height=220&section=header&text=AMAN%20AMARJIT&fontSize=68&fontColor=e0f7ff&fontAlignY=55&stroke=00c8e0&strokeWidth=2&desc=Systems+Architect+%C2%B7+AI+Engineer+%C2%B7+Security+Researcher&descSize=16&descAlignY=75&descColor=67e8f9&animation=fadeIn" width="100%"/>
 
-<br/>
+</div>
+
+<div align="center">
 
 <a href="https://github.com/amanamarjit243222">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=16&duration=2800&pause=600&color=22D3EE&center=true&vCenter=true&repeat=true&width=700&height=40&lines=Architecting+the+digital+frontier;Building+Autonomous+Intelligent+Systems;Zero-Trust+Security+%7C+Biometric+AI;Human-Machine+Interface+Engineering;Where+Code+Meets+Cognition" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&repeat=true&width=650&height=36&lines=Architecting+intelligent%2C+secure%2C+high-performance+systems;Fullstack+%7C+AI+%7C+Zero-Trust+Security+%7C+Robotics;Building+at+the+intersection+of+AI+and+cybersecurity;From+biometric+engines+to+geopolitical+simulators" alt="Typing SVG"/>
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/amanamarjit243222">
-  <img src="https://img.shields.io/badge/GitHub-amanamarjit243222-001824?style=for-the-badge&logo=github&logoColor=67e8f9&labelColor=002d40"/>
+<img src="https://img.shields.io/badge/GitHub-amanamarjit243222-0a1628?style=for-the-badge&logo=github&logoColor=67e8f9&labelColor=0d2137"/>
 </a>
 &nbsp;
-<img src="https://komarev.com/ghpvc/?username=amanamarjit243222&style=for-the-badge&color=004d6b&label=PROFILE+VIEWS&labelColor=002d40"/>
+<img src="https://komarev.com/ghpvc/?username=amanamarjit243222&style=for-the-badge&color=0a1628&label=PROFILE+VIEWS&labelColor=0d2137"/>
 &nbsp;
-<img src="https://img.shields.io/github/followers/amanamarjit243222?style=for-the-badge&color=001824&labelColor=002d40&label=FOLLOWERS&logo=github&logoColor=67e8f9"/>
+<img src="https://img.shields.io/github/followers/amanamarjit243222?style=for-the-badge&color=0a1628&labelColor=0d2137&label=FOLLOWERS&logo=github&logoColor=67e8f9"/>
 
 </div>
 
@@ -24,235 +31,186 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- ════════════════════════════════════════════════════
+     SECTION 01 · IDENTITY
+     ════════════════════════════════════════════════════ -->
+
 <br/>
 
-## ◈ IDENTITY MATRIX
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+01+%C2%B7+IDENTITY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&desc=&animation=fadeIn" width="100%"/>
+
+<br/>
 
 ```typescript
 /**
- * @system    AMAN_AMARJIT  —  Engineer Instance
- * @version   2025.CURRENT
- * @clearance OPEN SOURCE
- * ─────────────────────────────────────────────────────────────────────
+ * @module    @aman/core
+ * @author    Aman Amarjit  <AAJ>
+ * @role      Systems Architect · AI Engineer · Security Researcher
+ * @location  Bhubaneswar, India  ·  Building for the world
+ * @status    ONLINE — Architecting the next system
  */
 
-import type { FullstackEngineer, AIResearcher, SecurityArchitect }
-  from "@aman/core";
+export const AMAN_AMARJIT = {
 
-const AMAN_AMARJIT = {
+  // ── IDENTITY ─────────────────────────────────────────────────────────
+  codename  : "AAJ",
+  focus     : "Intelligent systems · Secure infrastructure · 3D interfaces",
 
-  // ── IDENTITY ──────────────────────────────────────────────────────
-  codename   : "AAJ",
-  title      : "Systems Architect  ·  AI Engineer  ·  Security Researcher",
-  location   : "Bhubaneswar, India  ·  Building for the world",
-
-  // ── DOMAIN EXPERTISE ──────────────────────────────────────────────
-  domains: {
-    primary  : [ "Backend Architecture",    "Fullstack Engineering"     ],
-    advanced : [ "Autonomous AI Systems",   "Zero-Trust Security"       ],
-    frontier : [ "Biometric Intelligence",  "Human-Machine Interfaces"  ],
+  // ── DOMAINS ──────────────────────────────────────────────────────────
+  expertise : {
+    primary  : [ "Backend Architecture",    "Fullstack Engineering"    ],
+    advanced : [ "Autonomous AI Systems",   "Zero-Trust Security"      ],
+    frontier : [ "Biometric Intelligence",  "Human-Machine Interfaces" ],
   },
 
-  // ── ACTIVE STACK ──────────────────────────────────────────────────
-  currentlyUsing : [ "FastAPI", "TensorFlow.js", "Three.js", "Gemini" ],
-  currentlyBuilt : [ "RULE THE WORLD", "Knowledge Synthesizer",
-                     "Biometric Engine", "Discord AI Persona"          ],
+  // ── CURRENT WORK ─────────────────────────────────────────────────────
+  flagship  : [ "RULE THE WORLD", "Knowledge Synthesizer",
+                "Biometric Engine", "Discord AI Persona"               ],
+  stack     : [ "FastAPI", "TensorFlow.js", "Three.js", "Gemini API"  ],
 
-  // ── PHILOSOPHY ────────────────────────────────────────────────────
-  principles: {
-    on_security  : "Not a feature. The foundation.",
-    on_code      : "Every abstraction must earn its complexity.",
-    on_systems   : "Build things that think. Ship things that last.",
-    on_craft     : "The interface is a promise. Keep it.",
+  // ── PHILOSOPHY ───────────────────────────────────────────────────────
+  principles : {
+    security  : "Not a layer. The foundation.",
+    design    : "Every abstraction must earn its complexity.",
+    systems   : "Build things that think. Ship things that last.",
+    craft     : "The interface is a promise. Keep it.",
   },
 
-  // ── SYSTEM STATUS ─────────────────────────────────────────────────
-  status   : "[ ONLINE ]  Architecting the next system",
-  openTo   : [ "Collaboration", "Frontier Projects", "Hard Problems" ],
+  // ── OPEN TO ──────────────────────────────────────────────────────────
+  openTo    : [ "Collaboration", "Frontier Projects", "Hard Problems" ],
 
-} satisfies FullstackEngineer & AIResearcher & SecurityArchitect;
-
-export default AMAN_AMARJIT;
+} as const;
 ```
 
 <br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- ════════════════════════════════════════════════════
+     SECTION 02 · FLAGSHIP SYSTEMS
+     ════════════════════════════════════════════════════ -->
+
 <br/>
 
-## ◈ FLAGSHIP SYSTEMS
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+02+%C2%B7+FLAGSHIP+SYSTEMS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="8%" align="center" valign="top"><br/><sub><b>01</b></sub></td>
+<td width="54%" valign="top">
 
-### 🌍 [RULE THE WORLD](https://github.com/amanamarjit243222/RULE-THE-WORLD)
-**Hyper-Realistic Geopolitical & Macroeconomic Strategy Simulator**
+**[RULE THE WORLD](https://github.com/amanamarjit243222/RULE-THE-WORLD)** &nbsp;🌍
+**Geopolitical & Macroeconomic Strategy Simulator**
 
-A sovereign-grade simulation platform built on a **custom modular JavaScript engine**. Multi-variable economic modeling, real-time diplomatic state machines, and emergent geopolitical logic — zero framework dependencies.
+Sovereign-grade simulation built on a **custom modular JS engine** — no framework dependencies. Multi-variable economic modeling, real-time diplomatic state machines, and emergent geopolitical logic.
 
-- Custom event-driven architecture with deterministic state rollback
-- Complex macroeconomic simulation (inflation, GDP, trade balances)
-- Modular world-building engine with pluggable nation logic
+`Event-Driven Architecture` &nbsp;`Deterministic State Rollback` &nbsp;`Macroeconomic Simulation`
 
 </td>
-<td width="42%" valign="top" align="center">
+<td width="38%" valign="top" align="right">
 
-<br/>
+![JS](https://img.shields.io/badge/JavaScript_ES6+-0a1628?style=flat-square&logo=javascript&logoColor=22d3ee)
+![CI](https://github.com/amanamarjit243222/RULE-THE-WORLD/actions/workflows/js-tests.yml/badge.svg)
 
-![JS](https://img.shields.io/badge/JavaScript_ES6+-001824?style=flat-square&logo=javascript&logoColor=22d3ee)
-![Engine](https://img.shields.io/badge/Custom_Engine-001824?style=flat-square&logoColor=22d3ee)
-
-<br/>
-
-![JS Tests](https://github.com/amanamarjit243222/RULE-THE-WORLD/actions/workflows/js-tests.yml/badge.svg)
-
-<br/>
-
-[**→ Launch Simulation**](https://ruletheworldmadebyaaj.netlify.app/) &nbsp;·&nbsp; [**→ Source**](https://github.com/amanamarjit243222/RULE-THE-WORLD)
+[**↗ Live Demo**](https://ruletheworldmadebyaaj.netlify.app/) &nbsp;·&nbsp; [**↗ Source**](https://github.com/amanamarjit243222/RULE-THE-WORLD)
 
 </td>
 </tr>
 </table>
 
----
-
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="8%" align="center" valign="top"><br/><sub><b>02</b></sub></td>
+<td width="54%" valign="top">
 
-### 🧠 [KNOWLEDGE SYNTHESIZER](https://github.com/amanamarjit243222/Knowledge-Synthesizer)
+**[KNOWLEDGE SYNTHESIZER](https://github.com/amanamarjit243222/Knowledge-Synthesizer)** &nbsp;🧠
 **AI-Powered Semantic Knowledge Graph Engine**
 
-Transforms raw discussions into **dynamic visual semantic maps** via NLP pipelines and graph-based knowledge architecture. Extracts entities, infers relationships, and renders live knowledge topology.
+Transforms raw discussions into **live visual semantic maps** via NLP pipelines. Extracts entities, infers concept relationships, and renders real-time knowledge topology on a graph canvas.
 
-- FastAPI backend with async NLP processing pipeline
-- Graph-based semantic clustering with real-time visual updates
-- Vector similarity scoring for concept relationship mapping
+`FastAPI` &nbsp;`Async NLP Pipeline` &nbsp;`Vector Similarity` &nbsp;`Graph Rendering`
 
 </td>
-<td width="42%" valign="top" align="center">
+<td width="38%" valign="top" align="right">
 
-<br/>
+![Python](https://img.shields.io/badge/Python-0a1628?style=flat-square&logo=python&logoColor=22d3ee)
+![CI](https://github.com/amanamarjit243222/Knowledge-Synthesizer/actions/workflows/python-tests.yml/badge.svg)
 
-![FastAPI](https://img.shields.io/badge/FastAPI-001824?style=flat-square&logo=fastapi&logoColor=22d3ee)
-![NLP](https://img.shields.io/badge/NLP_Graph_AI-001824?style=flat-square&logo=openai&logoColor=22d3ee)
-
-<br/>
-
-![Python Tests](https://github.com/amanamarjit243222/Knowledge-Synthesizer/actions/workflows/python-tests.yml/badge.svg)
-
-<br/>
-
-[**→ Launch Engine**](https://knowledge-synthesizer.netlify.app/) &nbsp;·&nbsp; [**→ Source**](https://github.com/amanamarjit243222/Knowledge-Synthesizer)
+[**↗ Live Demo**](https://knowledge-synthesizer.netlify.app/) &nbsp;·&nbsp; [**↗ Source**](https://github.com/amanamarjit243222/Knowledge-Synthesizer)
 
 </td>
 </tr>
 </table>
 
----
-
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="8%" align="center" valign="top"><br/><sub><b>03</b></sub></td>
+<td width="54%" valign="top">
 
-### 🤖 [DISCORD AI PERSONA](https://github.com/amanamarjit243222/discord-ai)
+**[DISCORD AI PERSONA](https://github.com/amanamarjit243222/discord-ai)** &nbsp;🤖
 **Autonomous Social Intelligence Agent**
 
-An advanced autonomous AI persona for Discord powered by **Google Gemini**. Maintains persistent contextual memory, models human behavioral patterns, and engages with contextually authentic natural language.
+Advanced autonomous AI persona powered by **Google Gemini**. Maintains episodic memory across sessions, models human behavioral cadence, and engages with contextually authentic natural language.
 
-- Long-term episodic memory architecture across conversation sessions
-- Behavioral modeling layer for human-like response timing and tone
-- Gemini API integration with custom prompt engineering framework
+`Gemini API` &nbsp;`Episodic Memory` &nbsp;`Behavioral Modeling` &nbsp;`Prompt Engineering`
 
 </td>
-<td width="42%" valign="top" align="center">
+<td width="38%" valign="top" align="right">
 
-<br/>
+![Python](https://img.shields.io/badge/Python_3.10+-0a1628?style=flat-square&logo=python&logoColor=22d3ee)
+![Gemini](https://img.shields.io/badge/Gemini-0a1628?style=flat-square&logo=google&logoColor=22d3ee)
 
-![Python](https://img.shields.io/badge/Python_3.10+-001824?style=flat-square&logo=python&logoColor=22d3ee)
-![Gemini](https://img.shields.io/badge/Google_Gemini-001824?style=flat-square&logo=google&logoColor=22d3ee)
-
-<br/>
-
-![Autonomous](https://img.shields.io/badge/Mode-Fully_Autonomous-001824?style=flat-square&logoColor=22d3ee)
-
-<br/>
-
-[**→ View Source**](https://github.com/amanamarjit243222/discord-ai)
+[**↗ Source**](https://github.com/amanamarjit243222/discord-ai)
 
 </td>
 </tr>
 </table>
 
----
-
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="8%" align="center" valign="top"><br/><sub><b>04</b></sub></td>
+<td width="54%" valign="top">
 
-### 🛡️ [BIOMETRIC ENGINE](https://github.com/amanamarjit243222/Face-recognition)
+**[BIOMETRIC ENGINE](https://github.com/amanamarjit243222/Face-recognition)** &nbsp;🛡️
 **Privacy-First Client-Side Face Recognition System**
 
-Enterprise-grade biometric access control running **100% client-side** via TensorFlow.js — biometric data never leaves the device. Architected for zero-trust environments where server exposure is unacceptable.
+Enterprise-grade access control running **100% in-browser** via TensorFlow.js — zero biometric data leaves the device. Designed for zero-trust environments and GDPR compliance.
 
-- Full face recognition pipeline in-browser with no server round-trips
-- IndexedDB encrypted local biometric storage with JWT session control
-- Designed to GDPR and biometric compliance standards
+`TensorFlow.js` &nbsp;`Zero-Trust` &nbsp;`IndexedDB Encryption` &nbsp;`JWT Sessions`
 
 </td>
-<td width="42%" valign="top" align="center">
+<td width="38%" valign="top" align="right">
 
-<br/>
+![TF.js](https://img.shields.io/badge/TensorFlow.js-0a1628?style=flat-square&logo=tensorflow&logoColor=22d3ee)
+![CI](https://github.com/amanamarjit243222/Face-recognition/actions/workflows/js-tests.yml/badge.svg)
 
-![TF.js](https://img.shields.io/badge/TensorFlow.js-001824?style=flat-square&logo=tensorflow&logoColor=22d3ee)
-![Zero Trust](https://img.shields.io/badge/Zero--Trust_Arch-001824?style=flat-square&logoColor=22d3ee)
-
-<br/>
-
-![JS Tests](https://github.com/amanamarjit243222/Face-recognition/actions/workflows/js-tests.yml/badge.svg)
-
-<br/>
-
-[**→ Live System**](https://identity-verification-system.netlify.app/) &nbsp;·&nbsp; [**→ Source**](https://github.com/amanamarjit243222/Face-recognition)
+[**↗ Live Demo**](https://identity-verification-system.netlify.app/) &nbsp;·&nbsp; [**↗ Source**](https://github.com/amanamarjit243222/Face-recognition)
 
 </td>
 </tr>
 </table>
 
----
-
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="8%" align="center" valign="top"><br/><sub><b>05</b></sub></td>
+<td width="54%" valign="top">
 
-### 🪐 [SOLAR SYSTEM — GESTURE UI](https://github.com/amanamarjit243222/solar-system-using-hand-gesture)
-**3D Physics Engine with Real-Time Hand Gesture Control**
+**[SOLAR SYSTEM — GESTURE UI](https://github.com/amanamarjit243222/solar-system-using-hand-gesture)** &nbsp;🪐
+**3D Astrophysical Simulation with Hand Gesture Control**
 
-Full astrophysical simulation in WebGL via Three.js, controlled entirely through **live hand gesture recognition** using MediaPipe. A fusion of HCI research, computer vision, and 3D physics — no controllers, no clicks, just hands.
+Full WebGL solar system simulation controlled entirely via **real-time hand gesture recognition**. No controllers. No clicks. Pure HCI — MediaPipe hand tracking fused with Three.js orbital physics.
 
-- Real-time hand landmark tracking at 30fps via MediaPipe Hands
-- Custom gesture-to-command mapping with configurable sensitivity
-- Three.js WebGL scene with physically-based orbital mechanics
+`Three.js` &nbsp;`MediaPipe Hands` &nbsp;`WebGL` &nbsp;`Orbital Mechanics` &nbsp;`30fps CV`
 
 </td>
-<td width="42%" valign="top" align="center">
+<td width="38%" valign="top" align="right">
 
-<br/>
+![Three.js](https://img.shields.io/badge/Three.js-0a1628?style=flat-square&logo=threedotjs&logoColor=22d3ee)
+![CI](https://github.com/amanamarjit243222/solar-system-using-hand-gesture/actions/workflows/js-tests.yml/badge.svg)
 
-![Three.js](https://img.shields.io/badge/Three.js_WebGL-001824?style=flat-square&logo=threedotjs&logoColor=22d3ee)
-![MediaPipe](https://img.shields.io/badge/MediaPipe_CV-001824?style=flat-square&logo=google&logoColor=22d3ee)
-
-<br/>
-
-![JS Tests](https://github.com/amanamarjit243222/solar-system-using-hand-gesture/actions/workflows/js-tests.yml/badge.svg)
-
-<br/>
-
-[**→ Enter Simulation**](https://solarsystemwithhandgestures.netlify.app/) &nbsp;·&nbsp; [**→ Source**](https://github.com/amanamarjit243222/solar-system-using-hand-gesture)
+[**↗ Live Demo**](https://solarsystemwithhandgestures.netlify.app/) &nbsp;·&nbsp; [**↗ Source**](https://github.com/amanamarjit243222/solar-system-using-hand-gesture)
 
 </td>
 </tr>
@@ -262,62 +220,72 @@ Full astrophysical simulation in WebGL via Three.js, controlled entirely through
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- ════════════════════════════════════════════════════
+     SECTION 03 · TECHNOLOGY MATRIX
+     ════════════════════════════════════════════════════ -->
+
 <br/>
 
-## ◈ TECHNOLOGY MATRIX
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+03+%C2%B7+TECHNOLOGY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
 **Backend & Systems**
 
-![Python](https://img.shields.io/badge/Python-001824?style=for-the-badge&logo=python&logoColor=67e8f9)
-![FastAPI](https://img.shields.io/badge/FastAPI-001824?style=for-the-badge&logo=fastapi&logoColor=67e8f9)
-![Flask](https://img.shields.io/badge/Flask-001824?style=for-the-badge&logo=flask&logoColor=67e8f9)
-![Node.js](https://img.shields.io/badge/Node.js-001824?style=for-the-badge&logo=nodedotjs&logoColor=67e8f9)
+![Python](https://img.shields.io/badge/Python-0a1628?style=for-the-badge&logo=python&logoColor=67e8f9)
+![FastAPI](https://img.shields.io/badge/FastAPI-0a1628?style=for-the-badge&logo=fastapi&logoColor=67e8f9)
+![Flask](https://img.shields.io/badge/Flask-0a1628?style=for-the-badge&logo=flask&logoColor=67e8f9)
+![Node.js](https://img.shields.io/badge/Node.js-0a1628?style=for-the-badge&logo=nodedotjs&logoColor=67e8f9)
 
-**AI / ML & Computer Vision**
+**AI · ML · Computer Vision**
 
-![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-001824?style=for-the-badge&logo=tensorflow&logoColor=67e8f9)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-001824?style=for-the-badge&logo=google&logoColor=67e8f9)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-001824?style=for-the-badge&logo=google&logoColor=67e8f9)
-![NLP Pipelines](https://img.shields.io/badge/NLP_Pipelines-001824?style=for-the-badge&logo=huggingface&logoColor=67e8f9)
+![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-0a1628?style=for-the-badge&logo=tensorflow&logoColor=67e8f9)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
+![NLP](https://img.shields.io/badge/NLP_Pipelines-0a1628?style=for-the-badge&logo=huggingface&logoColor=67e8f9)
 
-**Frontend & 3D**
+**Frontend · 3D · WebGL**
 
-![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-001824?style=for-the-badge&logo=javascript&logoColor=67e8f9)
-![Three.js](https://img.shields.io/badge/Three.js-001824?style=for-the-badge&logo=threedotjs&logoColor=67e8f9)
-![HTML5](https://img.shields.io/badge/HTML5-001824?style=for-the-badge&logo=html5&logoColor=67e8f9)
-![CSS3](https://img.shields.io/badge/CSS3-001824?style=for-the-badge&logo=css3&logoColor=67e8f9)
+![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-0a1628?style=for-the-badge&logo=javascript&logoColor=67e8f9)
+![Three.js](https://img.shields.io/badge/Three.js-0a1628?style=for-the-badge&logo=threedotjs&logoColor=67e8f9)
+![HTML5](https://img.shields.io/badge/HTML5-0a1628?style=for-the-badge&logo=html5&logoColor=67e8f9)
+![CSS3](https://img.shields.io/badge/CSS3-0a1628?style=for-the-badge&logo=css3&logoColor=67e8f9)
 
-**Security & DevOps**
+**Security · DevOps · Infrastructure**
 
-![JWT](https://img.shields.io/badge/JWT-001824?style=for-the-badge&logo=jsonwebtokens&logoColor=67e8f9)
-![Zero Trust](https://img.shields.io/badge/Zero--Trust-001824?style=for-the-badge&logoColor=67e8f9)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-001824?style=for-the-badge&logo=githubactions&logoColor=67e8f9)
-![Netlify](https://img.shields.io/badge/Netlify-001824?style=for-the-badge&logo=netlify&logoColor=67e8f9)
-![IndexedDB](https://img.shields.io/badge/IndexedDB-001824?style=for-the-badge&logo=databricks&logoColor=67e8f9)
+![JWT](https://img.shields.io/badge/JWT-0a1628?style=for-the-badge&logo=jsonwebtokens&logoColor=67e8f9)
+![Zero Trust](https://img.shields.io/badge/Zero--Trust-0a1628?style=for-the-badge&logoColor=67e8f9)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a1628?style=for-the-badge&logo=githubactions&logoColor=67e8f9)
+![Netlify](https://img.shields.io/badge/Netlify-0a1628?style=for-the-badge&logo=netlify&logoColor=67e8f9)
+![IndexedDB](https://img.shields.io/badge/IndexedDB-0a1628?style=for-the-badge&logo=databricks&logoColor=67e8f9)
 
 <br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- ════════════════════════════════════════════════════
+     SECTION 04 · ENGINEERING METRICS
+     ════════════════════════════════════════════════════ -->
+
 <br/>
 
-## ◈ ENGINEERING METRICS
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+04+%C2%B7+ENGINEERING+METRICS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+
+<br/>
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=amanamarjit243222&show_icons=true&hide_border=true&bg_color=000d1a&title_color=67e8f9&icon_color=06b6d4&text_color=a5f3fc&ring_color=0e7490&include_all_commits=true&count_private=true"/>
-&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanamarjit243222&layout=compact&hide_border=true&bg_color=000d1a&title_color=67e8f9&text_color=a5f3fc"/>
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=amanamarjit243222&show_icons=true&hide_border=true&bg_color=060f1c&title_color=67e8f9&icon_color=06b6d4&text_color=a5f3fc&ring_color=0e7490&include_all_commits=true&count_private=true&custom_title=Output+Metrics"/>
+&nbsp;&nbsp;
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanamarjit243222&layout=compact&hide_border=true&bg_color=060f1c&title_color=67e8f9&text_color=a5f3fc&custom_title=Primary+Languages"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=amanamarjit243222&theme=transparent&hide_border=true&background=000d1a&ring=06b6d4&fire=22d3ee&currStreakLabel=67e8f9&sideLabels=67e8f9&dates=4b7a8a&currStreakNum=ffffff&sideNums=ffffff&stroke=0e7490"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=amanamarjit243222&theme=transparent&hide_border=true&background=060f1c&ring=06b6d4&fire=22d3ee&currStreakLabel=67e8f9&sideLabels=67e8f9&dates=3d6e7e&currStreakNum=e0f7ff&sideNums=e0f7ff&stroke=0e7490"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=amanamarjit243222&bg_color=000d1a&color=67e8f9&line=0e7490&point=22d3ee&area=true&area_color=001824&hide_border=true&custom_title=Contribution+Topology" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=amanamarjit243222&bg_color=060f1c&color=67e8f9&line=0e7490&point=22d3ee&area=true&area_color=0d2137&hide_border=true&custom_title=Contribution+Topology" width="96%"/>
 
 </div>
 
@@ -325,34 +293,44 @@ Full astrophysical simulation in WebGL via Three.js, controlled entirely through
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- ════════════════════════════════════════════════════
+     SECTION 05 · ENGINEERING DOCTRINE
+     ════════════════════════════════════════════════════ -->
+
 <br/>
 
-## ◈ ENGINEERING DOCTRINE
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+05+%C2%B7+ENGINEERING+DOCTRINE&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+
+<br/>
 
 ```
   ╔══════════════════════════════════════════════════════════════════╗
-  ║                   THE AAJ ENGINEERING MANIFESTO                  ║
+  ║               T H E   A A J   M A N I F E S T O                 ║
   ╠══════════════════════════════════════════════════════════════════╣
   ║                                                                  ║
-  ║  I ···· Security is not a feature — it is the foundation.       ║
-  ║  II ··· Every abstraction must earn its complexity.             ║
-  ║  III ·· Systems should think. Interfaces should transcend.      ║
-  ║  IV ··· Ship with intent. Refactor with courage.                ║
-  ║  V ···· The best code is the code that doesn't need explaining. ║
+  ║  I ····  Security is not a feature — it is the foundation.      ║
+  ║  II ···  Every abstraction must earn its complexity.            ║
+  ║  III ··  Systems should think. Interfaces should transcend.     ║
+  ║  IV ···  Ship with intent. Refactor with courage.               ║
+  ║  V ····  The best code is the code that doesn't need explaining.║
   ║                                                                  ║
   ╠══════════════════════════════════════════════════════════════════╣
-  ║                                    — Aman Amarjit  ·  AAJ  ·  ∞ ║
+  ║                          — Aman Amarjit  ·  AAJ  ·  2025 —      ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
 
+<br/>
+
 <div align="center">
 
-`[ Security-First ]` &nbsp;·&nbsp; `[ AI-Native ]` &nbsp;·&nbsp; `[ Performance-Obsessed ]` &nbsp;·&nbsp; `[ Zero Compromise ]`
+`Security-First` &nbsp;&nbsp;·&nbsp;&nbsp; `AI-Native` &nbsp;&nbsp;·&nbsp;&nbsp; `Performance-Obsessed` &nbsp;&nbsp;·&nbsp;&nbsp; `Zero Compromise`
 
 </div>
 
 <br/>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,50:001824,100:000000&height=130&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=15&fontColor=22d3ee&fontAlignY=58&animation=fadeIn" width="100%"/>
-</div>
+<!-- ════════════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════════════ -->
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,40:001824,100:000000&height=120&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=14&fontColor=0e7490&fontAlignY=62&animation=fadeIn" width="100%"/>
