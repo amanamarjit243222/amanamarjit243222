@@ -17,9 +17,7 @@
 
 <br/><br/>
 
-<a href="https://github.com/Aman-Amarjit">
-<img src="https://img.shields.io/badge/GitHub-Aman--Amarjit-0a1628?style=for-the-badge&logo=github&logoColor=67e8f9&labelColor=0d2137"/>
-</a>
+<a href="https://github.com/Aman-Amarjit"><img src="https://img.shields.io/badge/GitHub-Aman--Amarjit-0a1628?style=for-the-badge&logo=github&logoColor=67e8f9&labelColor=0d2137"/></a>
 &nbsp;
 <img src="https://komarev.com/ghpvc/?username=Aman-Amarjit&style=for-the-badge&color=0a1628&label=PROFILE+VIEWS&labelColor=0d2137"/>
 &nbsp;
@@ -32,7 +30,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <!-- ════════════════════════════════════════════════════
-     SECTION 01 · IDENTITY
+     SECTION 01 · IDENTITY MATRIX
      ════════════════════════════════════════════════════ -->
 
 <br/>
@@ -227,7 +225,8 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <!-- ════════════════════════════════════════════════════
-     SECTION 03 · TECHNOLOGY MATRIX  (ORBITAL ANIMATION)
+     SECTION 03 · TECHNOLOGY MATRIX — ORBITAL ANIMATION
+     Uses SMIL animateTransform (GitHub-compatible, no CSS)
      ════════════════════════════════════════════════════ -->
 
 <br/>
@@ -238,220 +237,153 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 
 <div align="center">
 
-<!-- ░░░ ORBITAL TECH STACK ANIMATION ░░░ -->
-<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .orbit-outer { animation: spin-cw 18s linear infinite; transform-origin: 250px 250px; }
-      .orbit-mid   { animation: spin-ccw 12s linear infinite; transform-origin: 250px 250px; }
-      .orbit-inner { animation: spin-cw 8s linear infinite; transform-origin: 250px 250px; }
+<svg width="520" height="520" viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg">
 
-      .counter-outer { animation: spin-ccw 18s linear infinite; transform-origin: inherit; }
-      .counter-mid   { animation: spin-cw 12s linear infinite; transform-origin: inherit; }
-      .counter-inner { animation: spin-ccw 8s linear infinite; transform-origin: inherit; }
+  <!-- Space background -->
+  <circle cx="260" cy="260" r="254" fill="#030810" stroke="#0e4a5a" stroke-width="1.5"/>
 
-      @keyframes spin-cw  { from { transform: rotate(0deg);   } to { transform: rotate(360deg);  } }
-      @keyframes spin-ccw { from { transform: rotate(0deg);   } to { transform: rotate(-360deg); } }
+  <!-- Star dots -->
+  <circle cx="80"  cy="80"  r="1.2" fill="#67e8f9" opacity=".5"/>
+  <circle cx="440" cy="95"  r="1"   fill="#22d3ee" opacity=".4"/>
+  <circle cx="55"  cy="370" r="1.5" fill="#67e8f9" opacity=".4"/>
+  <circle cx="465" cy="410" r="1"   fill="#67e8f9" opacity=".5"/>
+  <circle cx="195" cy="38"  r="1"   fill="#fff"    opacity=".35"/>
+  <circle cx="375" cy="475" r="1.2" fill="#67e8f9" opacity=".4"/>
+  <circle cx="490" cy="245" r="1"   fill="#22d3ee" opacity=".3"/>
+  <circle cx="28"  cy="260" r="1"   fill="#fff"    opacity=".3"/>
+  <circle cx="420" cy="175" r="1"   fill="#67e8f9" opacity=".3"/>
+  <circle cx="100" cy="440" r="1.2" fill="#22d3ee" opacity=".3"/>
 
-      .ring { fill: none; stroke-dasharray: 6 4; opacity: 0.25; }
-      .dot  { r: 22; }
-      .lbl  { font-family: 'JetBrains Mono', monospace; font-size: 8px; font-weight: 700;
-               fill: #67e8f9; text-anchor: middle; dominant-baseline: middle; }
-      .icon-bg { opacity: 0.92; }
-    </style>
+  <!-- Orbit rings (dashed) -->
+  <circle cx="260" cy="260" r="185" fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="5 8" opacity=".2"/>
+  <circle cx="260" cy="260" r="124" fill="none" stroke="#06b6d4" stroke-width="1" stroke-dasharray="5 8" opacity=".2"/>
+  <circle cx="260" cy="260" r="65"  fill="none" stroke="#0891b2" stroke-width="1" stroke-dasharray="5 8" opacity=".2"/>
 
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+  <!-- CENTER CORE (pulsing via animateTransform scale) -->
+  <circle cx="260" cy="260" r="52" fill="#071525" stroke="#22d3ee" stroke-width="2.5" opacity=".9">
+    <animate attributeName="opacity" values=".7;1;.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="260" cy="260" r="40" fill="#0a1e35" stroke="#0e7490" stroke-width="1"/>
+  <text x="260" y="255" font-family="monospace" font-size="13" font-weight="bold" fill="#22d3ee" text-anchor="middle">AAJ</text>
+  <text x="260" y="271" font-family="monospace" font-size="7.5" fill="#67e8f9" text-anchor="middle">SYSTEMS</text>
 
-  <!-- Background circle -->
-  <circle cx="250" cy="250" r="240" fill="#060f1c" stroke="#0e7490" stroke-width="1.5" opacity="0.6"/>
+  <!-- ═══════════════════════════════════════════════
+       OUTER RING — 8 nodes, radius 185, CW 22s
+       SMIL animateTransform rotates around center
+       Each icon counter-rotates to stay upright
+       ═══════════════════════════════════════════════ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 260 260" to="360 260 260" dur="22s" repeatCount="indefinite"/>
 
-  <!-- Orbit rings -->
-  <circle cx="250" cy="250" r="170" class="ring" stroke="#22d3ee" stroke-width="1"/>
-  <circle cx="250" cy="250" r="115" class="ring" stroke="#06b6d4" stroke-width="1"/>
-  <circle cx="250" cy="250" r="60"  class="ring" stroke="#0e7490" stroke-width="1"/>
+    <!-- PYTHON @ 270° → (260, 75) -->
+    <g transform="translate(260,75)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#1a3050" stroke="#4b8bbe" stroke-width="2"/>
+      <rect x="-9" y="-13" width="12" height="6" rx="3" fill="#ffd43b"/>
+      <rect x="-9" y="-13" width="6" height="16" rx="2.5" fill="#ffd43b"/>
+      <rect x="-3" y="-7"  width="12" height="6" rx="3" fill="#306998"/>
+      <rect x="3"  y="-7"  width="6"  height="16" rx="2.5" fill="#306998"/>
+      <circle cx="-4" cy="-11" r="2.5" fill="#306998"/>
+      <circle cx="7"  cy="7"   r="2.5" fill="#ffd43b"/>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#8ab4d4" text-anchor="middle">Python</text>
+    </g>
 
-  <!-- Center node -->
-  <circle cx="250" cy="250" r="38" fill="#0a1628" stroke="#22d3ee" stroke-width="2" filter="url(#glow)"/>
-  <text x="250" y="246" class="lbl" font-size="9" fill="#22d3ee">AAJ</text>
-  <text x="250" y="257" class="lbl" font-size="6" fill="#67e8f9">SYSTEMS</text>
+    <!-- FASTAPI @ 315° → (391, 129) -->
+    <g transform="translate(391,129)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#002a20" stroke="#05998a" stroke-width="2"/>
+      <text x="0" y="-4" font-family="monospace" font-size="10" font-weight="bold" fill="#05cfb8" text-anchor="middle">Fast</text>
+      <text x="0" y="9"  font-family="monospace" font-size="10" font-weight="bold" fill="#00d4aa" text-anchor="middle">API</text>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#5abfb4" text-anchor="middle">FastAPI</text>
+    </g>
 
-  <!-- ░ OUTER ORBIT — radius 170 ░ -->
-  <!-- 8 items evenly at 45° apart: 270°, 315°, 0°, 45°, 90°, 135°, 180°, 225° -->
-  <g class="orbit-outer">
-    <!-- Python  @ 270° → (250, 80) -->
-    <g transform="translate(250,80)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#60a5fa">PY</text>
-      </g>
+    <!-- NODE.JS @ 0° → (445, 260) -->
+    <g transform="translate(445,260)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#0a2a0a" stroke="#3c873a" stroke-width="2"/>
+      <polygon points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5" fill="none" stroke="#3c873a" stroke-width="1.8"/>
+      <text x="0" y="4"  font-family="monospace" font-size="7.5" font-weight="bold" fill="#68a063" text-anchor="middle">NODE</text>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#5a9958" text-anchor="middle">Node.js</text>
     </g>
-    <!-- FastAPI @ 315° → (370, 130) -->
-    <g transform="translate(370,130)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#34d399">API</text>
-      </g>
-    </g>
-    <!-- Node.js @ 0° → (420, 250) -->
-    <g transform="translate(420,250)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#86efac">NODE</text>
-      </g>
-    </g>
-    <!-- Three.js @ 45° → (370, 370) -->
-    <g transform="translate(370,370)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1c1c2e" stroke="#a855f7" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#d8b4fe">3JS</text>
-      </g>
-    </g>
-    <!-- Docker @ 90° → (250, 420) -->
-    <g transform="translate(250,420)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#0c1a4e" stroke="#3b82f6" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#93c5fd">🐳</text>
-      </g>
-    </g>
-    <!-- WebGL @ 135° → (130, 370) -->
-    <g transform="translate(130,370)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#3b1a00" stroke="#f97316" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#fed7aa">WGL</text>
-      </g>
-    </g>
-    <!-- Flask @ 180° → (80, 250) -->
-    <g transform="translate(80,250)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1a1a1a" stroke="#9ca3af" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#e5e7eb">FLK</text>
-      </g>
-    </g>
-    <!-- NLP @ 225° → (130, 130) -->
-    <g transform="translate(130,130)">
-      <g class="counter-outer">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#2d1b69" stroke="#8b5cf6" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#c4b5fd">NLP</text>
-      </g>
-    </g>
-  </g>
 
-  <!-- ░ MID ORBIT — radius 115 ░ -->
-  <!-- 6 items at 60° apart: 270°, 330°, 30°, 90°, 150°, 210° -->
-  <g class="orbit-mid">
-    <!-- TensorFlow.js @ 270° → (250, 135) -->
-    <g transform="translate(250,135)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#3b1a00" stroke="#f97316" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#fdba74">TF</text>
-      </g>
+    <!-- THREE.JS @ 45° → (391, 391) -->
+    <g transform="translate(391,391)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#111111" stroke="#dddddd" stroke-width="2"/>
+      <polygon points="0,-14 13,8 -13,8" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <polygon points="0,-7 6,3 -6,3" fill="#ffffff" opacity=".35"/>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#bbbbbb" text-anchor="middle">Three.js</text>
     </g>
-    <!-- MediaPipe @ 330° → (350, 192) -->
-    <g transform="translate(350,192)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1a2e1a" stroke="#4ade80" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#86efac">MP</text>
-      </g>
+
+    <!-- DOCKER @ 90° → (260, 445) -->
+    <g transform="translate(260,445)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#081838" stroke="#2496ed" stroke-width="2"/>
+      <rect x="-12" y="-8" width="7" height="6" rx="1.5" fill="#2496ed" opacity=".9"/>
+      <rect x="-4"  y="-8" width="7" height="6" rx="1.5" fill="#2496ed" opacity=".9"/>
+      <rect x="4"   y="-8" width="7" height="6" rx="1.5" fill="#2496ed"/>
+      <rect x="-12" y="0"  width="7" height="6" rx="1.5" fill="#2496ed" opacity=".7"/>
+      <rect x="-4"  y="0"  width="7" height="6" rx="1.5" fill="#2496ed" opacity=".7"/>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#5ab0f4" text-anchor="middle">Docker</text>
     </g>
-    <!-- Gemini @ 30° → (350, 308) -->
-    <g transform="translate(350,308)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1a0a2e" stroke="#c084fc" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#e9d5ff">GEM</text>
-      </g>
+
+    <!-- WEBGL @ 135° → (129, 391) -->
+    <g transform="translate(129,391)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#200800" stroke="#d4380d" stroke-width="2"/>
+      <text x="0" y="-3" font-family="monospace" font-size="9" font-weight="bold" fill="#fa541c" text-anchor="middle">Web</text>
+      <text x="0" y="9"  font-family="monospace" font-size="9" font-weight="bold" fill="#ff7a45" text-anchor="middle">GL</text>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#c0754a" text-anchor="middle">WebGL</text>
     </g>
-    <!-- JWT @ 90° → (250, 365) -->
-    <g transform="translate(250,365)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#1a0a0a" stroke="#f87171" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#fca5a5">JWT</text>
-      </g>
+
+    <!-- FLASK @ 180° → (75, 260) -->
+    <g transform="translate(75,260)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#111111" stroke="#aaaaaa" stroke-width="2"/>
+      <rect x="-4" y="-14" width="8" height="7" rx="1.5" fill="#999999"/>
+      <path d="M-9,2 Q-11,10 0,13 Q11,10 9,2 L6,-5 L-6,-5 Z" fill="#555555"/>
+      <circle cx="-3" cy="6" r="2" fill="#aaaaaa" opacity=".5"/>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#999999" text-anchor="middle">Flask</text>
     </g>
-    <!-- IndexedDB @ 150° → (150, 308) -->
-    <g transform="translate(150,308)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#0a1a2e" stroke="#38bdf8" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#7dd3fc">IDB</text>
-      </g>
-    </g>
-    <!-- GH Actions @ 210° → (150, 192) -->
-    <g transform="translate(150,192)">
-      <g class="counter-mid">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#79c0ff">GHA</text>
-      </g>
+
+    <!-- NLP @ 225° → (129, 129) -->
+    <g transform="translate(129,129)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="22s" repeatCount="indefinite" additive="sum"/>
+      <circle r="27" fill="#12002a" stroke="#7c3aed" stroke-width="2"/>
+      <circle cx="-6" cy="-4" r="9" fill="none" stroke="#7c3aed" stroke-width="1.8"/>
+      <circle cx="6"  cy="-4" r="9" fill="none" stroke="#9333ea" stroke-width="1.8"/>
+      <line x1="-6" y1="5" x2="6" y2="5" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="0" y="21" font-family="monospace" font-size="6.5" fill="#a78bfa" text-anchor="middle">NLP/AI</text>
     </g>
   </g>
 
-  <!-- ░ INNER ORBIT — radius 60 ░ -->
-  <!-- 4 items at 90° apart -->
-  <g class="orbit-inner">
-    <!-- JS @ 270° → (250, 190) -->
-    <g transform="translate(250,190)">
-      <g class="counter-inner">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#2d2a00" stroke="#facc15" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#fef08a">JS</text>
-      </g>
+  <!-- ═══════════════════════════════════════════════
+       MID RING — 6 nodes, radius 124, CCW 15s
+       ═══════════════════════════════════════════════ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 260 260" to="-360 260 260" dur="15s" repeatCount="indefinite"/>
+
+    <!-- TENSORFLOW @ 270° → (260, 136) -->
+    <g transform="translate(260,136)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="15s" repeatCount="indefinite" additive="sum"/>
+      <circle r="25" fill="#1e0e00" stroke="#ff6d00" stroke-width="2"/>
+      <polygon points="0,-13 11,6.5 -11,6.5" fill="#ff6d00" opacity=".8"/>
+      <rect x="-5" y="1" width="10" height="12" rx="1" fill="#ff9800"/>
+      <text x="0" y="20" font-family="monospace" font-size="6" fill="#e8943a" text-anchor="middle">TF.js</text>
     </g>
-    <!-- HTML5 @ 0° → (310, 250) -->
-    <g transform="translate(310,250)">
-      <g class="counter-inner">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#3b0a00" stroke="#f97316" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#fed7aa">HTML</text>
-      </g>
+
+    <!-- MEDIAPIPE @ 330° → (367, 198) -->
+    <g transform="translate(367,198)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="15s" repeatCount="indefinite" additive="sum"/>
+      <circle r="25" fill="#001a0d" stroke="#00b96b" stroke-width="2"/>
+      <circle cx="0"  cy="-9" r="3.5" fill="#00b96b"/>
+      <circle cx="-7" cy="-2" r="3"   fill="#00d97e"/>
+      <circle cx="7"  cy="-2" r="3"   fill="#00d97e"/>
+      <circle cx="-5" cy="7"  r="2.5" fill="#00b96b"/>
+      <circle cx="5"  cy="7"  r="2.5" fill="#00b96b"/>
+      <text x="0" y="20" font-family="monospace" font-size="6" fill="#5abf8a" text-anchor="middle">MediaPipe</text>
     </g>
-    <!-- Netlify @ 90° → (250, 310) -->
-    <g transform="translate(250,310)">
-      <g class="counter-inner">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#002e2e" stroke="#2dd4bf" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#99f6e4">NTL</text>
-      </g>
-    </g>
-    <!-- CSS3 @ 180° → (190, 250) -->
-    <g transform="translate(190,250)">
-      <g class="counter-inner">
-        <circle class="dot icon-bg" cx="0" cy="0" fill="#00123b" stroke="#60a5fa" stroke-width="1.5"/>
-        <text x="0" y="0" class="lbl" fill="#bfdbfe">CSS</text>
-      </g>
-    </g>
-  </g>
 
-</svg>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-**Backend & Systems**
-
-![Python](https://img.shields.io/badge/Python-0a1628?style=for-the-badge&logo=python&logoColor=67e8f9)
-![FastAPI](https://img.shields.io/badge/FastAPI-0a1628?style=for-the-badge&logo=fastapi&logoColor=67e8f9)
-![Flask](https://img.shields.io/badge/Flask-0a1628?style=for-the-badge&logo=flask&logoColor=67e8f9)
-![Node.js](https://img.shields.io/badge/Node.js-0a1628?style=for-the-badge&logo=nodedotjs&logoColor=67e8f9)
-
-**AI · ML · Computer Vision**
-
-![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-0a1628?style=for-the-badge&logo=tensorflow&logoColor=67e8f9)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
-![NLP](https://img.shields.io/badge/NLP_Pipelines-0a1628?style=for-the-badge&logo=huggingface&logoColor=67e8f9)
-
-**Frontend · 3D · WebGL**
-
-![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-0a1628?style=for-the-badge&logo=javascript&logoColor=67e8f9)
-![Three.js](https://img.shields.io/badge/Three.js-0a1628?style=for-the-badge&logo=threedotjs&logoColor=67e8f9)
-![HTML5](https://img.shields.io/badge/HTML5-0a1628?style=for-the-badge&logo=html5&logoColor=67e8f9)
-![CSS3](https://img.shields.io/badge/CSS3-0a1628?style=for-the-badge&logo=css3&logoColor=67e8f9)
-
-**Security · DevOps · Infrastructure**
-
-![JWT](https://img.shields.io/badge/JWT-0a1628?style=for-the-badge&logo=jsonwebtokens&logoColor=67e8f9)
-![Zero Trust](https://img.shields.io/badge/Zero--Trust-0a1628?style=for-the-badge&logoColor=67e8f9)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a1628?style=for-the-badge
+    <!-- GEMINI @ 30° → (367, 322) -->
+    <g transform="translate(367,322)">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="
