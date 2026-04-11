@@ -62,6 +62,8 @@
 │  AAJ@systems:~$  ls ./projects                                       │
 └──────────────────────────────────────────────────────────────────────┘
 
+  trade/                   →  Real-time algorithmic trading platform (TypeScript)
+  plumber/                 →  Android data pipeline & workflow automation (Kotlin)
   rule-the-world/          →  Geopolitical & macroeconomic simulator
   knowledge-synthesizer/   →  AI-powered semantic knowledge graph engine
   biometric-engine/        →  Client-side face recognition (zero-trust)
@@ -107,6 +109,52 @@
 <td width="8%" align="center" valign="top"><br/><sub><b>01</b></sub></td>
 <td width="54%" valign="top">
 
+**[TRADE](https://github.com/Aman-Amarjit/Trade)** &nbsp;📈
+**Algorithmic Trading Platform**
+
+A real-time trading platform built on **TypeScript** — designed for precision, speed, and extensibility. Features live market data integration, strategy execution pipelines, and a responsive dashboard for portfolio monitoring.
+
+`TypeScript` &nbsp;`Real-Time Data` &nbsp;`Trading Algorithms` &nbsp;`Portfolio Analytics`
+
+</td>
+<td width="38%" valign="top" align="right">
+
+![TS](https://img.shields.io/badge/TypeScript-0a1628?style=flat-square&logo=typescript&logoColor=22d3ee)
+
+[**↗ Source**](https://github.com/Aman-Amarjit/Trade)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="8%" align="center" valign="top"><br/><sub><b>02</b></sub></td>
+<td width="54%" valign="top">
+
+**[PLUMBER](https://github.com/Aman-Amarjit/PLUMBER)** &nbsp;🔧
+**Android Data Pipeline & Workflow Automation**
+
+A Kotlin-native Android utility that acts as a **data routing and automation layer** — piping, transforming, and dispatching data across services and system components with minimal overhead.
+
+`Kotlin` &nbsp;`Android` &nbsp;`Data Pipelines` &nbsp;`Workflow Automation`
+
+</td>
+<td width="38%" valign="top" align="right">
+
+![Kotlin](https://img.shields.io/badge/Kotlin-0a1628?style=flat-square&logo=kotlin&logoColor=22d3ee)
+
+[**↗ Source**](https://github.com/Aman-Amarjit/PLUMBER)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="8%" align="center" valign="top"><br/><sub><b>03</b></sub></td>
+<td width="54%" valign="top">
+
 **[RULE THE WORLD](https://github.com/Aman-Amarjit/RULE-THE-WORLD)** &nbsp;🌍
 **Geopolitical & Macroeconomic Strategy Simulator**
 
@@ -128,7 +176,7 @@ Sovereign-grade simulation built on a **custom modular JS engine** — no framew
 
 <table>
 <tr>
-<td width="8%" align="center" valign="top"><br/><sub><b>02</b></sub></td>
+<td width="8%" align="center" valign="top"><br/><sub><b>04</b></sub></td>
 <td width="54%" valign="top">
 
 **[KNOWLEDGE SYNTHESIZER](https://github.com/Aman-Amarjit/Knowledge-Synthesizer)** &nbsp;🧠
@@ -152,7 +200,7 @@ Transforms raw discussions into **live visual semantic maps** via NLP pipelines.
 
 <table>
 <tr>
-<td width="8%" align="center" valign="top"><br/><sub><b>03</b></sub></td>
+<td width="8%" align="center" valign="top"><br/><sub><b>05</b></sub></td>
 <td width="54%" valign="top">
 
 **[DISCORD AI PERSONA](https://github.com/Aman-Amarjit/discord-ai)** &nbsp;🤖
@@ -176,7 +224,7 @@ Advanced autonomous AI persona powered by **Google Gemini**. Maintains episodic 
 
 <table>
 <tr>
-<td width="8%" align="center" valign="top"><br/><sub><b>04</b></sub></td>
+<td width="8%" align="center" valign="top"><br/><sub><b>06</b></sub></td>
 <td width="54%" valign="top">
 
 **[BIOMETRIC ENGINE](https://github.com/Aman-Amarjit/Face-recognition)** &nbsp;🛡️
@@ -200,7 +248,7 @@ Enterprise-grade access control running **100% in-browser** via TensorFlow.js �
 
 <table>
 <tr>
-<td width="8%" align="center" valign="top"><br/><sub><b>05</b></sub></td>
+<td width="8%" align="center" valign="top"><br/><sub><b>07</b></sub></td>
 <td width="54%" valign="top">
 
 **[SOLAR SYSTEM — GESTURE UI](https://github.com/Aman-Amarjit/solar-system-using-hand-gesture)** &nbsp;🪐
@@ -242,6 +290,12 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 ![FastAPI](https://img.shields.io/badge/FastAPI-0a1628?style=for-the-badge&logo=fastapi&logoColor=67e8f9)
 ![Flask](https://img.shields.io/badge/Flask-0a1628?style=for-the-badge&logo=flask&logoColor=67e8f9)
 ![Node.js](https://img.shields.io/badge/Node.js-0a1628?style=for-the-badge&logo=nodedotjs&logoColor=67e8f9)
+![TypeScript](https://img.shields.io/badge/TypeScript-0a1628?style=for-the-badge&logo=typescript&logoColor=67e8f9)
+
+**Mobile & Native**
+
+![Kotlin](https://img.shields.io/badge/Kotlin-0a1628?style=for-the-badge&logo=kotlin&logoColor=67e8f9)
+![Android](https://img.shields.io/badge/Android-0a1628?style=for-the-badge&logo=android&logoColor=67e8f9)
 
 **AI · ML · Computer Vision**
 
