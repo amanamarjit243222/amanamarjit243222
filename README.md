@@ -37,7 +37,7 @@
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+01+%C2%B7+IDENTITY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&desc=&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+01+%C2%B7+IDENTITY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=50&textBg=false&desc=&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -100,7 +100,7 @@
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+02+%C2%B7+FLAGSHIP+SYSTEMS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+02+%C2%B7+FLAGSHIP+SYSTEMS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=50&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -280,7 +280,7 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+03+%C2%B7+TECHNOLOGY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+03+%C2%B7+TECHNOLOGY+MATRIX&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=50&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -329,7 +329,7 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+04+%C2%B7+ENGINEERING+METRICS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+04+%C2%B7+ENGINEERING+METRICS&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=50&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -359,7 +359,7 @@ Full WebGL solar system simulation controlled entirely via **real-time hand gest
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+05+%C2%B7+ENGINEERING+DOCTRINE&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=5&textBg=false&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1628,100:0d2137&height=38&text=%E2%97%88+05+%C2%B7+ENGINEERING+DOCTRINE&fontSize=14&fontColor=67e8f9&fontAlignY=65&fontAlign=50&textBg=false&animation=fadeIn" width="100%"/>
 
 <br/>
 
