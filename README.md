@@ -94,8 +94,7 @@ AAJ@systems:~$  _
 |                                                                  |
 | I    ****  Security is not a feature -- it is the foundation.    |
 | II   ***   Every abstraction must earn its complexity.           |
-| III  **    Systems should think. Interfaces should transcend.     |
-| IV   ***   Ship with intent. Refactor with courage.              |
+| III  **    Systems should think. Interfaces should transcend.      IV   ***   Ship with intent. Refactor with courage.              |
 | V    ****  The best code is the code that doesn't need explaining.|
 |                                                                  |
 +==================================================================+
@@ -111,8 +110,10 @@ AAJ@systems:~$  _
 [![Portfolio](https://img.shields.io/badge/Portfolio-0a1628?style=for-the-badge&logo=netlify&logoColor=67e8f9)](https://aman-amarjit.onrender.com/)
 [![Instagram](https://img.shields.io/badge/Instagram-0a1628?style=for-the-badge&logo=instagram&logoColor=67e8f9)](https://www.instagram.com/amanamarjit8/)
 [![Email](https://img.shields.io/badge/Email-0a1628?style=for-the-badge&logo=gmail&logoColor=67e8f9)](mailto:amanamarjit243222@gmail.com)
-
+[Email](mailto:amanamarjit243222@gmail.com)
 `AI-Native` * `Security-First` * `Systems Thinker` * `Open to Collaborate`
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,40:001824,100:000000&height=100&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=13&fontColor=0e7490&fontAlignY=65&animation=fadeIn)
 
+
+[Email](m
