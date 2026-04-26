@@ -3,6 +3,8 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=soft&color=0:000000,70:001824,100:004d6b&height=250&section=header&text=AMAN%20AMARJIT&fontSize=70&fontColor=ffffff&fontAlignY=45&stroke=00d4e8&strokeWidth=2&desc=AI+Engineer+%C2%B7+Systems+Builder+%C2%B7+Security+Researcher&descSize=18&descAlignY=70&descColor=67e8f9&animation=twinkling)
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=800&color=67e8f9&center=true&vCenter=true&width=700&lines=Architecting+the+digital+frontier;Building+Autonomous+Intelligent+Systems;Security-First+%7C+Biometric+AI;Human-Machine+Interface+Engineering;Full-Stack+%7C+Backend+%7C+Distributed+AI" alt="Typing SVG" /></a>
+
 </div>
 
 ---
@@ -84,6 +86,10 @@
 ![Stats](https://github-readme-stats.vercel.app/api?username=Aman-Amarjit&show_icons=true&hide_border=true&bg_color=060f1c&title_color=67e8f9&icon_color=06b6d4&text_color=a5f3fc&ring_color=0e7490&include_all_commits=true&count_private=true&custom_title=Output+Metrics)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Aman-Amarjit&layout=compact&hide_border=true&bg_color=060f1c&title_color=67e8f9&text_color=a5f3fc&custom_title=Primary+Languages)
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aman-Amarjit&bg_color=060f1c&color=67e8f9&line=0e7490&point=22d3ee&area=true&area_color=0d2137&hide_border=true&custom_title=Contribution+Topology" width="100%"/>
 
 </div>
 
