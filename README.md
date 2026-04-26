@@ -134,4 +134,4 @@
   <code>AI-Native</code> · <code>Security-First</code> · <code>Systems Thinker</code> · <code>Open to Collaborate</code>
 </p>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,40:001824,100:000000&height=100&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=13&fontColor=0e7490&fontAlignY=65&animation=fadeIn)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,40:001824,100:000000&height=100&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=13&fontColor=0e7490&fontAlignY=65&animation=twinkling)
