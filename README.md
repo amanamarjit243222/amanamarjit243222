@@ -1,18 +1,17 @@
-<!-- ============================================================
-     AMAN AMARJIT — GitHub Profile README
-     Systems Architect · AI Engineer · Security Researcher
+<!-- ============================================================ 
+Software Engineer | Backend | AI & Systems
      ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=shark&color=0:000000,40:001824,80:002d40,100:004d6b&height=260&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=48&stroke=00d4e8&strokeWidth=3&desc=Systems+Architect+%C2%B7+AI+Engineer+%C2%B7+Security+Researcher&descSize=16&descAlignY=68&descColor=67e8f9&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=shark&color=0:000000,40:001824,80:002d40,100:004d6b&height=260&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=48&stroke=00d4e8&strokeWidth=3&desc=Software+Engineer+%7C+Backend+%7C+AI+%26+Systems&descSize=16&descAlignY=68&descColor=67e8f9&animation=fadeIn" width="100%"/>
 
 </div>
 
 <div align="center">
 
 <a href="https://github.com/Aman-Amarjit">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&repeat=true&width=650&height=36&lines=Architecting+intelligent%2C+secure%2C+high-performance+systems;Fullstack+%7C+AI+%7C+Zero-Trust+Security+%7C+Robotics;Building+at+the+intersection+of+AI+and+cybersecurity;From+biometric+engines+to+geopolitical+simulators" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&repeat=true&width=650&height=36&lines=Building+intelligent%2C+secure%2C+backend+systems;Fullstack+%7C+AI+%7C+Security+%7C+Robotics;Focusing+on+AI+and+security+engineering;From+biometric+engines+to+geopolitical+simulators" alt="Typing SVG"/>
 </a>
 
 <br/><br/>
@@ -46,16 +45,16 @@
 │  AAJ@systems:~$  whoami                                              │
 └──────────────────────────────────────────────────────────────────────┘
 
-  Aman Amarjit  —  Systems Architect · AI Engineer · Security Researcher
+  Aman Amarjit  —  Software Engineer | Backend | AI
   Location  »  Bhubaneswar, India  ·  Building for the world
-  Status    »  [ ONLINE ]  Architecting the next system
+  Status    »  [ ONLINE ]  Engineering intelligent systems
 
 ┌──────────────────────────────────────────────────────────────────────┐
 │  AAJ@systems:~$  cat expertise.json                                  │
 └──────────────────────────────────────────────────────────────────────┘
 
   [primary]   Backend Architecture  ·  Fullstack Engineering
-  [advanced]  Autonomous AI Systems  ·  Zero-Trust Security
+  [advanced]  Autonomous AI Systems  ·  Security Engineering
   [frontier]  Biometric Intelligence  ·  Human-Machine Interfaces
 
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -66,7 +65,7 @@
   plumber/                 →  Android data pipeline & workflow automation (Kotlin)
   rule-the-world/          →  Geopolitical & macroeconomic simulator
   knowledge-synthesizer/   →  AI-powered semantic knowledge graph engine
-  biometric-engine/        →  Client-side face recognition (zero-trust)
+  biometric-engine/        →  Client-side face recognition (local inference)
   discord-ai-persona/      →  Autonomous Gemini-powered social agent
   solar-system-gesture/    →  3D physics engine with hand gesture control
 
@@ -230,9 +229,9 @@ Advanced autonomous AI persona powered by **Google Gemini**. Maintains episodic 
 **[BIOMETRIC ENGINE](https://github.com/Aman-Amarjit/Face-recognition)** &nbsp;🛡️
 **Privacy-First Client-Side Face Recognition System**
 
-Enterprise-grade access control running **100% in-browser** via TensorFlow.js — zero biometric data leaves the device. Designed for zero-trust environments and GDPR compliance.
+Enterprise-grade access control running **100% in-browser** via TensorFlow.js — zero biometric data leaves the device. Designed for local inference environments and GDPR compliance.
 
-`TensorFlow.js` &nbsp;`Zero-Trust` &nbsp;`IndexedDB Encryption` &nbsp;`JWT Sessions`
+`TensorFlow.js` &nbsp;`local inference` &nbsp;`IndexedDB Encryption` &nbsp;`JWT Sessions`
 
 </td>
 <td width="38%" valign="top" align="right">
