@@ -1,137 +1,198 @@
-<!-- HEADER -->
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=soft&color=0:000000,70:001824,100:004d6b&height=250&section=header&text=AMAN%20AMARJIT&fontSize=70&fontColor=ffffff&fontAlignY=45&stroke=00d4e8&strokeWidth=2&desc=AI+Engineer+%C2%B7+Systems+Builder+%C2%B7+Security+Researcher&descSize=18&descAlignY=70&descColor=67e8f9&animation=twinkling)
+![Header](https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:001824,100:004d6b&height=280&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=44&stroke=00d4e8&strokeWidth=2&desc=AI+Engineer+·+Systems+Builder+·+Security+Researcher&descSize=17&descAlignY=68&descColor=67e8f9&animation=fadeIn&reversal=false)
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=800&color=67e8f9&center=true&vCenter=true&width=700&lines=Architecting+the+digital+frontier;Building+Autonomous+Intelligent+Systems;Security-First+%7C+Biometric+AI;Human-Machine+Interface+Engineering;Full-Stack+%7C+Backend+%7C+Distributed+AI" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3200&pause=900&color=67e8f9&center=true&vCenter=true&width=740&lines=Architecting+Autonomous+Intelligent+Systems;Security-First+%7C+Biometric+AI+%7C+NLP+Pipelines;Human-Machine+Interface+Engineering;Full-Stack+%7C+Backend+%7C+Distributed+AI;Freelance+AI+Engineer+%C2%B7+Open+to+Collaborate" alt="Typing SVG" /></a>
+
+<br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=Aman-Amarjit&color=06b6d4&style=for-the-badge&label=PROFILE+VIEWS)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/Aman-Amarjit?style=for-the-badge&color=06b6d4&labelColor=0a1628&logo=github&logoColor=67e8f9)](https://github.com/Aman-Amarjit)
 
 </div>
 
----
+<!-- ═══════════════════════════ DIVIDER ═══════════════════════════ -->
+![Divider](https://capsule-render.vercel.app/api?type=rect&color=0:001824,50:003d52,100:001824&height=3&animation=fadeIn)
 
 ```text
-┌──────────────────────────────────────────────────────────────────────┐
-│  AAJ@systems:~$  whoami                                              │
-└──────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│  AAJ@systems:~$ whoami                                              │
+└─────────────────────────────────────────────────────────────────────┘
 
-  Aman Amarjit  —  AI Engineer · Systems Builder · Security Researcher
-  Alias     »  AAJ
-  Location  »  Bhubaneswar, India
-  Status    »  [ ONLINE ]  Building intelligent systems
+  Name      »  Aman Amarjit
+  Alias     »  AAJ  ·  Reshape The Algorithm (RTA)
+  Location  »  Odisha, India
+  Status    »  [ ONLINE ]  Building at the intersection of AI & systems
 
-┌──────────────────────────────────────────────────────────────────────┐
-│  AAJ@systems:~$  cat focus.json                                      │
-└──────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│  AAJ@systems:~$ cat focus.json                                      │
+└─────────────────────────────────────────────────────────────────────┘
 
-  [primary]   Machine Learning · NLP Pipelines · Autonomous AI Agents
-  [secondary] Security Engineering · Biometric Systems
-  [frontier]  Human-Machine Interfaces · Robotics
+  {
+    "primary"   : ["Machine Learning", "LLM Engineering", "NLP Pipelines"],
+    "secondary" : ["Security Engineering", "Biometric AI", "Quant Systems"],
+    "frontier"  : ["Autonomous Agents", "Human-Machine Interfaces", "Robotics"]
+  }
 
-┌──────────────────────────────────────────────────────────────────────┐
-│  AAJ@systems:~$  ls ./projects                                       │
-└──────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│  AAJ@systems:~$ cat highlights.log                                  │
+└─────────────────────────────────────────────────────────────────────┘
 
-  knowledge-synthesizer/   →  NLP pipeline → semantic knowledge graph
-  biometric-engine/        →  Client-side ML face recognition (local inference)
-  discord-ai-persona/      →  Autonomous agent with mood-state engine + memory
-  solar-system-gesture/    →  Real-time CV hand tracking → 3D physics control
-  rule-the-world/          →  Custom JS simulation engine, no framework deps
+  ✦  Delivered multi-engine crypto analytics platform for intl. client (CA)
+  ✦  2nd Place — Code Verse · HORIZON 2026, IGIT Sarang (Mar 2026)
+  ✦  Freelance AI/ML engineer — clients across India & Canada
+  ✦  Founder, Reshape The Algorithm (RTA) — AI engineering practice
 
-  AAJ@systems:~$  _
+  AAJ@systems:~$ _
 ```
 
----
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="25" height="25" /> Projects
-
-| # | Project | Stack | Links |
-|---|---------|-------|-------|
-| 01 | **KNOWLEDGE SYNTHESIZER** · NLP pipeline that transforms raw text into live semantic knowledge graphs. Extracts entities, infers concept relationships, renders real-time topology. | `FastAPI` `Async NLP` `Graph Rendering` `Python` | [↗ Demo](https://knowledge-synthesizer.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/Knowledge-Synthesizer) |
-| 02 | **BIOMETRIC ENGINE** · Face recognition running 100% client-side via TensorFlow.js. Zero biometric data leaves the browser. JWT sessions + IndexedDB encryption. | `TensorFlow.js` `Security-First` `IndexedDB` `JWT` | [↗ Demo](https://identity-verification-system.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/Face-recognition) |
-| 03 | **DISCORD AI PERSONA** · Autonomous social agent with dynamic mood-state engine (affects tone, pacing, emoji usage), persistent user memory via entity extraction, and multi-key API failover. Deployed via Docker + PM2. | `Gemini API` `Episodic Memory` `Behavioral Modeling` `Docker` | [↗ Source](https://github.com/Aman-Amarjit/discord-ai) |
-| 04 | **SOLAR SYSTEM — GESTURE UI** · Full WebGL solar system controlled by real-time hand gesture recognition. No controllers, no clicks. MediaPipe hand tracking fused with Three.js orbital physics at 30fps. | `Three.js` `MediaPipe` `WebGL` `CV` | [↗ Demo](https://solarsystemwithhandgestures.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/solar-system-using-hand-gesture) |
-| 05 | **RULE THE WORLD** · Geopolitical & macroeconomic strategy simulator built on a custom modular JS engine — zero framework dependencies. Real-time diplomatic state machines, multi-variable economic modeling. | `Vanilla JS` `Event-Driven Arch` `State Machines` | [↗ Demo](https://ruletheworldmadebyaaj.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/RULE-THE-WORLD) |
-| 06 | **PERSONAL BUTLER (PANDA AI)** · AI Desktop Agent featuring episodic memory, local RAG pipeline, and cognitive emotion framework (OCC/PAD). | `Whisper` `FastAPI` `RAG` `Python` | [↗ Source](https://github.com/Aman-Amarjit/personal-butler) |
-| 07 | **TRADE** · Algorithmic trading engine with automated breakout detection, volatility filtering, and fee-aware risk management. | `TypeScript` `Quant-Trading` `Risk-Management` | [↗ Source](https://github.com/Aman-Amarjit/Trade) |
-| 08 | **PLUMBER** · Dual-interface Android service marketplace built with Kotlin, featuring real-time technician tracking and dashboard. | `Kotlin` `Android` `Service-Marketplace` | [↗ Source](https://github.com/Aman-Amarjit/PLUMBER) |
-
----
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" width="25" height="25" /> Tech Stack
-
-**AI · ML · Computer Vision**<br>
-![Python](https://img.shields.io/badge/Python-0a1628?style=for-the-badge&logo=python&logoColor=67e8f9)
-![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-0a1628?style=for-the-badge&logo=tensorflow&logoColor=67e8f9)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
-![NLP](https://img.shields.io/badge/NLP_Pipelines-0a1628?style=for-the-badge&logo=huggingface&logoColor=67e8f9)
-![Gemini](https://img.shields.io/badge/Gemini_API-0a1628?style=for-the-badge&logo=google&logoColor=67e8f9)
-
-**Backend & Systems**<br>
-![FastAPI](https://img.shields.io/badge/FastAPI-0a1628?style=for-the-badge&logo=fastapi&logoColor=67e8f9)
-![Node.js](https://img.shields.io/badge/Node.js-0a1628?style=for-the-badge&logo=nodedotjs&logoColor=67e8f9)
-![Docker](https://img.shields.io/badge/Docker-0a1628?style=for-the-badge&logo=docker&logoColor=67e8f9)
-
-**Security & Infrastructure**<br>
-![JWT](https://img.shields.io/badge/JWT-0a1628?style=for-the-badge&logo=jsonwebtokens&logoColor=67e8f9)
-![Security Engineering](https://img.shields.io/badge/Security--Engineering-0a1628?style=for-the-badge&logoColor=67e8f9)
-![Netlify](https://img.shields.io/badge/Netlify-0a1628?style=for-the-badge&logo=netlify&logoColor=67e8f9)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0a1628?style=for-the-badge&logo=githubactions&logoColor=67e8f9)
-
----
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="25" height="25" /> Stats
+<!-- ═══════════════════════════ NOW ═══════════════════════════ -->
+![Divider](https://capsule-render.vercel.app/api?type=soft&color=0:001824,100:002a3d&height=2&animation=fadeIn)
 
 <div align="center">
 
-![Stats](https://github-readme-stats.vercel.app/api?username=Aman-Amarjit&show_icons=true&hide_border=true&bg_color=060f1c&title_color=67e8f9&icon_color=06b6d4&text_color=a5f3fc&ring_color=0e7490&include_all_commits=true&count_private=true&custom_title=Output+Metrics)
+### 〔 NOW 〕
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Aman-Amarjit&layout=compact&hide_border=true&bg_color=060f1c&title_color=67e8f9&text_color=a5f3fc&custom_title=Primary+Languages)
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=4000&pause=1200&color=22d3ee&center=true&vCenter=true&width=640&lines=▸+Building+AI+systems+under+RTA+brand;▸+Exploring+LLM+fine-tuning+%26+autonomous+agents;▸+Open+to+AI%2FML+internships+%26+freelance+work;▸+Competing+in+hackathons+%26+coding+contests" alt="Now" />
 
-<br/>
+</div>
+
+<!-- ═══════════════════════════ WAVE ═══════════════════════════ -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:000000,60:001824,100:003344&height=60&section=header&animation=twinkling&reversal=true)
+
+<!-- ═══════════════════════════ TROPHIES ═══════════════════════════ -->
+<div align="center">
+
+## 🏆 Trophies
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=Aman-Amarjit&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:003344,60:001824,100:000000&height=60&section=footer&animation=twinkling&reversal=false)
+
+<!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+## ⚡ Projects
+
+| # | Project | Description | Stack | Links |
+|---|---------|-------------|-------|-------|
+| 01 | **CRYPTO REVERSAL BOT** | Production-grade algorithmic trading system with 15 analytical engines, breakout detection, volatility filtering, and a React/TypeScript dashboard. Built for international client. | `Python` `FastAPI` `React` `TypeScript` `Vite` | — |
+| 02 | **KNOWLEDGE SYNTHESIZER** | NLP pipeline that transforms raw audio and text into live semantic knowledge graphs. Extracts entities, infers concept relationships, renders real-time graph topology. | `FastAPI` `NLP` `Graph Rendering` `Python` | [↗ Demo](https://knowledge-synthesizer.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/Knowledge-Synthesizer) |
+| 03 | **BIOMETRIC ENGINE** | Face recognition running 100% client-side via TensorFlow.js. Zero biometric data ever leaves the browser. JWT sessions + IndexedDB encryption. | `TensorFlow.js` `JWT` `IndexedDB` `Security` | [↗ Demo](https://identity-verification-system.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/Face-recognition) |
+| 04 | **DISCORD AI PERSONA** | Autonomous social agent with a dynamic mood-state engine (affects tone, pacing, emoji usage), persistent user memory via entity extraction, and multi-key API failover. Deployed via Docker + PM2. | `Gemini API` `Episodic Memory` `Docker` `PM2` | [↗ Source](https://github.com/Aman-Amarjit/discord-ai) |
+| 05 | **SOLAR SYSTEM — GESTURE UI** | Full WebGL solar system controlled by real-time hand gesture recognition. No controllers, no clicks. MediaPipe fused with Three.js orbital physics at 30fps. | `Three.js` `MediaPipe` `WebGL` `CV` | [↗ Demo](https://solarsystemwithhandgestures.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/solar-system-using-hand-gesture) |
+| 06 | **RULE THE WORLD** | Geopolitical & macroeconomic strategy simulator on a custom modular JS engine — zero framework dependencies. Real-time diplomatic state machines, multi-variable economic modeling. | `Vanilla JS` `Event-Driven` `State Machines` | [↗ Demo](https://ruletheworldmadebyaaj.netlify.app/) · [↗ Source](https://github.com/Aman-Amarjit/RULE-THE-WORLD) |
+| 07 | **PERSONAL BUTLER (PANDA AI)** | AI desktop agent with episodic memory, local RAG pipeline, and a cognitive emotion framework (OCC/PAD model). Voice-driven interaction via Whisper. | `Whisper` `FastAPI` `RAG` `Python` | [↗ Source](https://github.com/Aman-Amarjit/personal-butler) |
+| 08 | **PLUMBER** | Dual-interface Android service marketplace in Kotlin — real-time technician tracking, booking dashboard, and live status updates. | `Kotlin` `Android` `Firebase` | [↗ Source](https://github.com/Aman-Amarjit/PLUMBER) |
+
+<!-- ═══════════════════════════ WAVE ═══════════════════════════ -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:000000,60:001824,100:003344&height=60&section=header&animation=twinkling&reversal=true)
+
+<!-- ═══════════════════════════ TECH STACK ═══════════════════════════ -->
+## 🛠 Tech Stack
+
+<div align="center">
+
+**AI · ML · Computer Vision**
+
+[![My Skills](https://skillicons.dev/icons?i=python,tensorflow,pytorch&theme=dark)](https://skillicons.dev)
+
+**Backend · Systems · Infrastructure**
+
+[![My Skills](https://skillicons.dev/icons?i=fastapi,nodejs,docker,nginx,githubactions,linux&theme=dark)](https://skillicons.dev)
+
+**Frontend · Interfaces**
+
+[![My Skills](https://skillicons.dev/icons?i=react,ts,js,threejs,vite,html,css&theme=dark)](https://skillicons.dev)
+
+**Data · Storage · Cloud**
+
+[![My Skills](https://skillicons.dev/icons?i=firebase,postgres,mongodb,netlify,vercel&theme=dark)](https://skillicons.dev)
+
+**Tools & Platforms**
+
+[![My Skills](https://skillicons.dev/icons?i=git,github,vscode,kotlin,androidstudio&theme=dark)](https://skillicons.dev)
+
+</div>
+
+<!-- ═══════════════════════════ WAVE ═══════════════════════════ -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:003344,60:001824,100:000000&height=60&section=footer&animation=twinkling&reversal=false)
+
+<!-- ═══════════════════════════ STATS ═══════════════════════════ -->
+## 📊 Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Aman-Amarjit&show_icons=true&hide_border=true&bg_color=060f1c&title_color=67e8f9&icon_color=06b6d4&text_color=a5f3fc&ring_color=0e7490&include_all_commits=true&count_private=true&custom_title=Output+Metrics" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aman-Amarjit&layout=compact&hide_border=true&bg_color=060f1c&title_color=67e8f9&text_color=a5f3fc&custom_title=Primary+Languages" height="180"/>
+
+<br/><br/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aman-Amarjit&theme=transparent&hide_border=true&background=060f1c&ring=06b6d4&fire=22d3ee&currStreakLabel=67e8f9&sideLabels=67e8f9&dates=3d6e7e&currStreakNum=e0f7ff&sideNums=e0f7ff&stroke=0e7490"/>
 
-<br/>
+</div>
+
+<!-- ═══════════════════════════ CONTRIBUTION GRAPH ═══════════════════════════ -->
+<div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aman-Amarjit&bg_color=060f1c&color=67e8f9&line=0e7490&point=22d3ee&area=true&area_color=0d2137&hide_border=true&custom_title=Contribution+Topology" width="100%"/>
 
 </div>
 
----
+<!-- ═══════════════════════════ SNAKE ═══════════════════════════ -->
+<!-- ⚠️  Requires one-time GitHub Action setup — see note below -->
+<div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Triangular%20Ruler.png" alt="Triangular Ruler" width="25" height="25" /> Engineering Doctrine
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aman-Amarjit/Aman-Amarjit/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aman-Amarjit/Aman-Amarjit/output/github-contribution-grid-snake.svg"/>
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Aman-Amarjit/Aman-Amarjit/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</picture>
+
+</div>
+
+<!-- ═══════════════════════════ WAVE ═══════════════════════════ -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:000000,60:001824,100:003344&height=60&section=header&animation=twinkling&reversal=true)
+
+<!-- ═══════════════════════════ DOCTRINE ═══════════════════════════ -->
+## 📐 Engineering Doctrine
 
 ```text
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║               T H E   A A J   M A N I F E S T O                 ║
-  ╠══════════════════════════════════════════════════════════════════╣
-  ║                                                                  ║
-  ║  I ····  Security is not a feature — it is the foundation.      ║
-  ║  II ···  Every abstraction must earn its complexity.            ║
-  ║  III ··  Systems should think. Interfaces should transcend.     ║
-  ║  IV ···  Ship with intent. Refactor with courage.               ║
-  ║  V ····  The best code is the code that doesn't need explaining.║
-  ║                                                                  ║
-  ╠══════════════════════════════════════════════════════════════════╣
-  ║                     — Aman Amarjit  ·  AAJ  ·  2025 —           ║
-  ╚══════════════════════════════════════════════════════════════════╝
+  ╔═════════════════════════════════════════════════════════════════╗
+  ║              T H E   A A J   M A N I F E S T O                 ║
+  ╠═════════════════════════════════════════════════════════════════╣
+  ║                                                                 ║
+  ║  I    ·  Security is not a feature — it is the foundation.     ║
+  ║  II   ·  Every abstraction must earn its complexity.           ║
+  ║  III  ·  Systems should think. Interfaces should transcend.    ║
+  ║  IV   ·  Ship with intent. Refactor with courage.              ║
+  ║  V    ·  The best code is the code that doesn't need comments. ║
+  ║                                                                 ║
+  ╠═════════════════════════════════════════════════════════════════╣
+  ║               — Aman Amarjit  ·  AAJ  ·  RTA  ·  2025 —       ║
+  ╚═════════════════════════════════════════════════════════════════╝
 ```
 
----
+<!-- ═══════════════════════════ CONNECT ═══════════════════════════ -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=0:003344,60:001824,100:000000&height=60&section=footer&animation=twinkling)
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" alt="Link" width="25" height="25" /> Connect
+## 🔗 Connect
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a1628?style=for-the-badge&logo=linkedin&logoColor=67e8f9)](https://www.linkedin.com/in/aman-amarjit-991016368/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0a1628?style=for-the-badge&logo=netlify&logoColor=67e8f9)](https://aman-amarjit.onrender.com/)
 [![Instagram](https://img.shields.io/badge/Instagram-0a1628?style=for-the-badge&logo=instagram&logoColor=67e8f9)](https://www.instagram.com/amanamarjit8/)
-[![Email](https://img.shields.io/badge/Email-0a1628?style=for-the-badge&logo=gmail&logoColor=67e8f9)](mailto:amanamarjit243222@gmail.com)
+[![Email](https://img.shields.io/badge/Email-0a1628?style=for-the-badge&logo=gmail&logoColor=67e8f9)](mailto:amanamarjit04@gmail.com)
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=5000&pause=2000&color=0e7490&center=true&vCenter=true&width=500&lines=AI-Native+%C2%B7+Security-First+%C2%B7+Systems+Thinker+%C2%B7+Open+to+Collaborate" alt="Tagline" />
 
 </div>
 
-<p align="center">
-  <code>AI-Native</code> · <code>Security-First</code> · <code>Systems Thinker</code> · <code>Open to Collaborate</code>
-</p>
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:004d6b,40:001824,100:000000&height=100&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=13&fontColor=0e7490&fontAlignY=65&animation=twinkling)
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+![Footer](https://capsule-render.vercel.app/api?type=venom&color=0:004d6b,40:001824,100:000000&height=120&section=footer&text=Built+with+precision.+Deployed+with+intent.&fontSize=14&fontColor=0e7490&fontAlignY=65&animation=fadeIn&reversal=true)
