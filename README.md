@@ -1,7 +1,7 @@
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:001824,100:004d6b&height=280&section=header&text=AMAN%20AMARJIT&fontSize=72&fontColor=ffffff&fontAlignY=44&stroke=00d4e8&strokeWidth=2&desc=AI+Engineer+·+Systems+Builder+·+Security+Researcher&descSize=17&descAlignY=68&descColor=67e8f9&animation=fadeIn&reversal=false)
+<img src="https://raw.githubusercontent.com/Aman-Amarjit/Aman-Amarjit/main/header.svg" width="100%" alt="Aman Amarjit | AI Engineer · Systems Builder · Security Researcher"/>
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3200&pause=900&color=67e8f9&center=true&vCenter=true&width=740&lines=Architecting+Autonomous+Intelligent+Systems;Security-First+%7C+Biometric+AI+%7C+NLP+Pipelines;Human-Machine+Interface+Engineering;Full-Stack+%7C+Backend+%7C+Distributed+AI;Freelance+AI+Engineer+%C2%B7+Open+to+Collaborate" alt="Typing SVG" /></a>
 

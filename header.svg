@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <!-- Background gradient matching original color scheme -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#000000"/>
+      <stop offset="50%"  stop-color="#001824"/>
+      <stop offset="100%" stop-color="#004d6b"/>
+    </linearGradient>
+
+    <!-- Cyan glow filter for cube edges -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle glow for text -->
+    <filter id="textGlow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Stroke glow for title -->
+    <filter id="titleGlow" x="-5%" y="-30%" width="110%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip to card bounds -->
+    <clipPath id="clip">
+      <rect width="900" height="280" rx="0" ry="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+
+  <!-- ── GRID SCANLINES (subtle depth) ── -->
+  <g opacity="0.04" clip-path="url(#clip)">
+    <line x1="0" y1="56"  x2="900" y2="56"  stroke="#00d4e8" stroke-width="1"/>
+    <line x1="0" y1="112" x2="900" y2="112" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="0" y1="168" x2="900" y2="168" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="0" y1="224" x2="900" y2="224" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="280" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="280" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="280" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="280" stroke="#00d4e8" stroke-width="1"/>
+    <line x1="750" y1="0" x2="750" y2="280" stroke="#00d4e8" stroke-width="1"/>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       ROTATING 3-D WIREFRAME CUBE  (centred ~x=780 y=140)
+       Uses SMIL animation on transform to rotate the cube group.
+       We pre-project 8 cube vertices at different rotation angles
+       and animate between them using animateTransform.
+       Since SMIL can't do true 3-D matrix math, we simulate
+       continuous rotation with a keyframe SVG approach:
+       — The cube group rotates in 2-D around its centre.
+       — A second offset group rotates at a different speed to
+         create the illusion of 3-D tumbling.
+  ════════════════════════════════════════════════ -->
+
+  <!-- Outer spin layer -->
+  <g transform="translate(765, 140)" opacity="0.55" filter="url(#glow)" clip-path="url(#clip)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 0 0"
+      to="360 0 0"
+      dur="14s"
+      repeatCount="indefinite"
+      additive="sum"/>
+
+    <!-- Inner counter-axis tilt — creates tumbling feel -->
+    <g>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="-360 0 0"
+        dur="22s"
+        repeatCount="indefinite"
+        additive="sum"/>
+
+      <!-- CUBE FACES (filled, semi-transparent) -->
+      <!-- Front face -->
+      <polygon points="-60,-60 60,-60 60,60 -60,60"
+               fill="#001824" fill-opacity="0.35"
+               stroke="#00d4e8" stroke-width="1.4"/>
+      <!-- Top face (isometric offset) -->
+      <polygon points="-60,-60 60,-60 80,-80 -40,-80"
+               fill="#002535" fill-opacity="0.3"
+               stroke="#00d4e8" stroke-width="1.2"/>
+      <!-- Right face -->
+      <polygon points="60,-60 80,-80 80,40 60,60"
+               fill="#001020" fill-opacity="0.3"
+               stroke="#00d4e8" stroke-width="1.2"/>
+
+      <!-- CUBE EDGES (wireframe) -->
+      <!-- Front square -->
+      <rect x="-60" y="-60" width="120" height="120"
+            fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+      <!-- Back square (offset) -->
+      <rect x="-40" y="-80" width="120" height="120"
+            fill="none" stroke="#0e7490" stroke-width="1.2"/>
+      <!-- Connecting depth edges -->
+      <line x1="-60" y1="-60" x2="-40" y2="-80" stroke="#22d3ee" stroke-width="1.2"/>
+      <line x1=" 60" y1="-60" x2=" 80" y2="-80" stroke="#22d3ee" stroke-width="1.2"/>
+      <line x1=" 60" y1=" 60" x2=" 80" y2=" 40" stroke="#22d3ee" stroke-width="1.2"/>
+      <line x1="-60" y1=" 60" x2="-40" y2=" 40" stroke="#22d3ee" stroke-width="1.2"/>
+
+      <!-- Corner accent dots -->
+      <circle cx="-60" cy="-60" r="2.5" fill="#67e8f9"/>
+      <circle cx=" 60" cy="-60" r="2.5" fill="#67e8f9"/>
+      <circle cx=" 60" cy=" 60" r="2.5" fill="#67e8f9"/>
+      <circle cx="-60" cy=" 60" r="2.5" fill="#67e8f9"/>
+      <circle cx="-40" cy="-80" r="2"   fill="#0e7490"/>
+      <circle cx=" 80" cy="-80" r="2"   fill="#0e7490"/>
+      <circle cx=" 80" cy=" 40" r="2"   fill="#0e7490"/>
+      <circle cx="-40" cy=" 40" r="2"   fill="#0e7490"/>
+    </g>
+  </g>
+
+  <!-- Secondary smaller cube (top-left accent) -->
+  <g transform="translate(95, 68)" opacity="0.25" filter="url(#glow)" clip-path="url(#clip)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="360 0 0"
+      to="0 0 0"
+      dur="18s"
+      repeatCount="indefinite"
+      additive="sum"/>
+
+    <rect x="-28" y="-28" width="56" height="56"
+          fill="none" stroke="#22d3ee" stroke-width="1.2"/>
+    <rect x="-18" y="-38" width="56" height="56"
+          fill="none" stroke="#0e7490" stroke-width="0.9"/>
+    <line x1="-28" y1="-28" x2="-18" y2="-38" stroke="#22d3ee" stroke-width="0.9"/>
+    <line x1=" 28" y1="-28" x2=" 38" y2="-38" stroke="#22d3ee" stroke-width="0.9"/>
+    <line x1=" 28" y1=" 28" x2=" 38" y2=" 18" stroke="#22d3ee" stroke-width="0.9"/>
+    <line x1="-28" y1=" 28" x2="-18" y2=" 18" stroke="#22d3ee" stroke-width="0.9"/>
+  </g>
+
+  <!-- ── STROKE DIVIDER LINE ── -->
+  <line x1="0" y1="277" x2="900" y2="277" stroke="#00d4e8" stroke-width="2" opacity="0.5"/>
+  <line x1="0" y1="3"   x2="900" y2="3"   stroke="#00d4e8" stroke-width="2" opacity="0.3"/>
+
+  <!-- ── TITLE TEXT ── -->
+  <text
+    x="450" y="130"
+    text-anchor="middle"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-weight="900"
+    font-size="72"
+    letter-spacing="6"
+    fill="#ffffff"
+    stroke="#00d4e8"
+    stroke-width="1.5"
+    filter="url(#titleGlow)"
+    paint-order="stroke fill">
+    AMAN AMARJIT
+  </text>
+
+  <!-- Fade-in animation on title -->
+  <animate
+    xlink:href="#title"
+    attributeName="opacity"
+    from="0" to="1"
+    dur="1.2s"
+    fill="freeze"/>
+
+  <!-- ── SUBTITLE ── -->
+  <text
+    x="450" y="175"
+    text-anchor="middle"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-weight="400"
+    font-size="17"
+    letter-spacing="1.5"
+    fill="#67e8f9"
+    opacity="0.90">
+    AI Engineer · Systems Builder · Security Researcher
+  </text>
+
+  <!-- ── BOTTOM ACCENT TAG ── -->
+  <text
+    x="450" y="238"
+    text-anchor="middle"
+    font-family="'Courier New', monospace"
+    font-size="12"
+    fill="#0e7490"
+    letter-spacing="3"
+    opacity="0.7">
+    ◈  RESHAPE THE ALGORITHM  ◈
+  </text>
+
+  <!-- Pulsing underline accent -->
+  <rect x="310" y="248" width="280" height="1.5" fill="#00d4e8" rx="1">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
