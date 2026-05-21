@@ -1,30 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
   <defs>
-    <!-- Main dark background -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#000000"/>
-      <stop offset="45%"  stop-color="#001824"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="50%" stop-color="#001824"/>
       <stop offset="100%" stop-color="#003d52"/>
     </linearGradient>
-
-    <!-- Radial highlight in center (adds depth) -->
-    <radialGradient id="centerLight" cx="47%" cy="50%" r="45%">
-      <stop offset="0%"   stop-color="#003d52" stop-opacity="0.6"/>
+    <radialGradient id="centerLight" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#003d52" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-
-    <!-- Strong neon glow for cube lines -->
-    <filter id="neonGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <filter id="neon" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur stdDeviation="3" result="b1"/>
-      <feGaussianBlur stdDeviation="7" result="b2"/>
+      <feGaussianBlur stdDeviation="8" result="b2"/>
       <feMerge>
         <feMergeNode in="b2"/>
         <feMergeNode in="b1"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <!-- Title glow -->
     <filter id="titleGlow" x="-8%" y="-50%" width="116%" height="200%">
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge>
@@ -33,105 +26,80 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <clipPath id="clip"><rect width="900" height="280"/></clipPath>
   </defs>
 
-  <!-- ── BACKGROUND ── -->
-  <rect width="900" height="280" fill="url(#bgGrad)"/>
+  <!-- BACKGROUND -->
+  <rect width="900" height="280" fill="url(#bg)"/>
   <rect width="900" height="280" fill="url(#centerLight)"/>
 
-  <!-- ── GRID (very faint depth lines) ── -->
-  <g opacity="0.06" clip-path="url(#clip)">
-    <line x1="0"   y1="93"  x2="900" y2="93"  stroke="#22d3ee" stroke-width="1"/>
-    <line x1="0"   y1="140" x2="900" y2="140" stroke="#22d3ee" stroke-width="1"/>
-    <line x1="0"   y1="187" x2="900" y2="187" stroke="#22d3ee" stroke-width="1"/>
-    <line x1="225" y1="0"   x2="225" y2="280" stroke="#22d3ee" stroke-width="1"/>
-    <line x1="450" y1="0"   x2="450" y2="280" stroke="#22d3ee" stroke-width="1"/>
-    <line x1="675" y1="0"   x2="675" y2="280" stroke="#22d3ee" stroke-width="1"/>
+  <!-- GRID -->
+  <g opacity="0.05">
+    <line x1="0" y1="93" x2="900" y2="93" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="0" y1="140" x2="900" y2="140" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="0" y1="187" x2="900" y2="187" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="225" y1="0" x2="225" y2="280" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="280" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="675" y1="0" x2="675" y2="280" stroke="#22d3ee" stroke-width="1"/>
   </g>
 
-  <!-- ════════════════════════════════════════════
-       WIREFRAME CUBE — CENTRED BEHIND TITLE (450,138)
-       Pure line elements, ZERO fills → no wedge artifacts.
-       Front half-size=110, back offset (+40,-40).
-  ════════════════════════════════════════════ -->
-  <g transform="translate(450,138)" opacity="0.85" filter="url(#neonGlow)" clip-path="url(#clip)">
+  <!--
+    CENTERED WIREFRAME CUBE at (450, 140)
+    Symmetric design: front centered at (-10,+10), back at (+10,-10)
+    so the cube's visual centroid = (0,0).
+    s=70, d=20 → max vertex dist from center = 113px
+    At y=140: range 27–253 (safely within 0–280).
+    NO clipPath on this group so rotation never gets cut.
+
+    Front corners:  TL(-80,-60)  TR(60,-60)  BR(60,80)  BL(-80,80)
+    Back  corners:  TL(-60,-80)  TR(80,-80)  BR(80,60)  BL(-60,60)
+  -->
+  <g transform="translate(450,140)" opacity="0.85" filter="url(#neon)">
     <animateTransform
       attributeName="transform"
       type="rotate"
-      from="0"
-      to="360"
-      dur="11s"
+      from="0" to="360"
+      dur="12s"
       repeatCount="indefinite"/>
 
-    <!-- FRONT FACE — 4 edges (bright cyan) -->
-    <line x1="-110" y1="-110" x2=" 110" y2="-110" stroke="#22d3ee" stroke-width="2.4" stroke-linecap="round"/>
-    <line x1=" 110" y1="-110" x2=" 110" y2=" 110" stroke="#22d3ee" stroke-width="2.4" stroke-linecap="round"/>
-    <line x1=" 110" y1=" 110" x2="-110" y2=" 110" stroke="#22d3ee" stroke-width="2.4" stroke-linecap="round"/>
-    <line x1="-110" y1=" 110" x2="-110" y2="-110" stroke="#22d3ee" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- FRONT FACE (bright cyan) -->
+    <line x1="-80" y1="-60" x2=" 60" y2="-60" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1=" 60" y1="-60" x2=" 60" y2=" 80" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1=" 60" y1=" 80" x2="-80" y2=" 80" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-80" y1=" 80" x2="-80" y2="-60" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
 
-    <!-- BACK FACE — 4 edges (dimmer teal) -->
-    <line x1="-70" y1="-150" x2=" 150" y2="-150" stroke="#0e7490" stroke-width="1.8" stroke-linecap="round"/>
-    <line x1=" 150" y1="-150" x2=" 150" y2="  70" stroke="#0e7490" stroke-width="1.8" stroke-linecap="round"/>
-    <line x1=" 150" y1="  70" x2="-70"  y2="  70" stroke="#0e7490" stroke-width="1.8" stroke-linecap="round"/>
-    <line x1="-70"  y1="  70" x2="-70"  y2="-150" stroke="#0e7490" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- BACK FACE (dim teal) -->
+    <line x1="-60" y1="-80" x2=" 80" y2="-80" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1=" 80" y1="-80" x2=" 80" y2=" 60" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1=" 80" y1=" 60" x2="-60" y2=" 60" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="-60" y1=" 60" x2="-60" y2="-80" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
 
-    <!-- DEPTH EDGES — connecting front to back -->
-    <line x1="-110" y1="-110" x2="-70"  y2="-150" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
-    <line x1=" 110" y1="-110" x2=" 150" y2="-150" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
-    <line x1=" 110" y1=" 110" x2=" 150" y2="  70" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
-    <line x1="-110" y1=" 110" x2="-70"  y2="  70" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+    <!-- DEPTH EDGES -->
+    <line x1="-80" y1="-60" x2="-60" y2="-80" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1=" 60" y1="-60" x2=" 80" y2="-80" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1=" 60" y1=" 80" x2=" 80" y2=" 60" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-80" y1=" 80" x2="-60" y2=" 60" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- VERTEX DOTS — front corners -->
-    <circle cx="-110" cy="-110" r="4.5" fill="#67e8f9"/>
-    <circle cx=" 110" cy="-110" r="4.5" fill="#67e8f9"/>
-    <circle cx=" 110" cy=" 110" r="4.5" fill="#67e8f9"/>
-    <circle cx="-110" cy=" 110" r="4.5" fill="#67e8f9"/>
+    <!-- FRONT VERTEX DOTS -->
+    <circle cx="-80" cy="-60" r="4" fill="#67e8f9"/>
+    <circle cx=" 60" cy="-60" r="4" fill="#67e8f9"/>
+    <circle cx=" 60" cy=" 80" r="4" fill="#67e8f9"/>
+    <circle cx="-80" cy=" 80" r="4" fill="#67e8f9"/>
 
-    <!-- VERTEX DOTS — back corners -->
-    <circle cx="-70"  cy="-150" r="3" fill="#0e7490"/>
-    <circle cx=" 150" cy="-150" r="3" fill="#0e7490"/>
-    <circle cx=" 150" cy="  70" r="3" fill="#0e7490"/>
-    <circle cx="-70"  cy="  70" r="3" fill="#0e7490"/>
+    <!-- BACK VERTEX DOTS -->
+    <circle cx="-60" cy="-80" r="3" fill="#0e7490"/>
+    <circle cx=" 80" cy="-80" r="3" fill="#0e7490"/>
+    <circle cx=" 80" cy=" 60" r="3" fill="#0e7490"/>
+    <circle cx="-60" cy=" 60" r="3" fill="#0e7490"/>
   </g>
 
-  <!-- SMALL ACCENT CUBE — top-right corner, counter-spin -->
-  <g transform="translate(820,65)" opacity="0.35" filter="url(#neonGlow)" clip-path="url(#clip)">
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0"
-      to="-360"
-      dur="18s"
-      repeatCount="indefinite"/>
-
-    <!-- front -->
-    <line x1="-32" y1="-32" x2=" 32" y2="-32" stroke="#22d3ee" stroke-width="1.4"/>
-    <line x1=" 32" y1="-32" x2=" 32" y2=" 32" stroke="#22d3ee" stroke-width="1.4"/>
-    <line x1=" 32" y1=" 32" x2="-32" y2=" 32" stroke="#22d3ee" stroke-width="1.4"/>
-    <line x1="-32" y1=" 32" x2="-32" y2="-32" stroke="#22d3ee" stroke-width="1.4"/>
-    <!-- back -->
-    <line x1="-18" y1="-46" x2=" 46" y2="-46" stroke="#0e7490" stroke-width="1"/>
-    <line x1=" 46" y1="-46" x2=" 46" y2=" 18" stroke="#0e7490" stroke-width="1"/>
-    <line x1=" 46" y1=" 18" x2="-18" y2=" 18" stroke="#0e7490" stroke-width="1"/>
-    <line x1="-18" y1=" 18" x2="-18" y2="-46" stroke="#0e7490" stroke-width="1"/>
-    <!-- depth -->
-    <line x1="-32" y1="-32" x2="-18" y2="-46" stroke="#22d3ee" stroke-width="1"/>
-    <line x1=" 32" y1="-32" x2=" 46" y2="-46" stroke="#22d3ee" stroke-width="1"/>
-    <line x1=" 32" y1=" 32" x2=" 46" y2=" 18" stroke="#22d3ee" stroke-width="1"/>
-    <line x1="-32" y1=" 32" x2="-18" y2=" 18" stroke="#22d3ee" stroke-width="1"/>
-  </g>
-
-  <!-- ── BORDER LINES ── -->
+  <!-- BORDER LINES -->
   <line x1="0" y1="2"   x2="900" y2="2"   stroke="#00d4e8" stroke-width="2.5" opacity="0.5"/>
   <line x1="0" y1="278" x2="900" y2="278" stroke="#00d4e8" stroke-width="2.5" opacity="0.5"/>
 
-  <!-- ── MAIN TITLE — rendered LAST so always on top ── -->
-  <text
-    x="420" y="148"
+  <!-- TITLE — rendered last → always on top of cube -->
+  <text x="450" y="148"
     text-anchor="middle"
-    font-family="'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif"
+    font-family="'Arial Black', Impact, Arial, sans-serif"
     font-weight="900"
     font-size="98"
     letter-spacing="2"
@@ -143,11 +111,10 @@
     AMAN AMARJIT
   </text>
 
-  <!-- ── SUBTITLE ── -->
-  <text
-    x="420" y="194"
+  <!-- SUBTITLE -->
+  <text x="450" y="194"
     text-anchor="middle"
-    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-family="'Segoe UI', Helvetica, Arial, sans-serif"
     font-weight="300"
     font-size="17"
     letter-spacing="3"
@@ -156,23 +123,19 @@
     AI Engineer  ·  Systems Builder  ·  Security Researcher
   </text>
 
-  <!-- ── BOTTOM BRAND TAG ── -->
-  <text
-    x="420" y="248"
+  <!-- BRAND TAG -->
+  <text x="450" y="248"
     text-anchor="middle"
-    font-family="'Courier New', 'Lucida Console', monospace"
+    font-family="'Courier New', monospace"
     font-size="11"
-    font-weight="400"
     fill="#0e7490"
     letter-spacing="5"
     opacity="0.7">
     ◈   RESHAPE THE ALGORITHM   ◈
   </text>
 
-  <!-- Pulsing accent line -->
+  <!-- PULSING LINE -->
   <rect x="280" y="257" width="280" height="1.5" fill="#00d4e8" rx="1">
     <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="width"   values="280;340;280"  dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="x"       values="280;250;280"  dur="3s" repeatCount="indefinite"/>
   </rect>
 </svg>
