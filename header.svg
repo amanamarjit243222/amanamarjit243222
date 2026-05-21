@@ -1,212 +1,179 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
   <defs>
-    <!-- Background gradient matching original color scheme -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Main dark background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#000000"/>
-      <stop offset="50%"  stop-color="#001824"/>
-      <stop offset="100%" stop-color="#004d6b"/>
+      <stop offset="45%"  stop-color="#001824"/>
+      <stop offset="100%" stop-color="#003d52"/>
     </linearGradient>
 
-    <!-- Cyan glow filter for cube edges -->
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <!-- Radial highlight in center (adds depth) -->
+    <radialGradient id="centerLight" cx="47%" cy="50%" r="45%">
+      <stop offset="0%"   stop-color="#003d52" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Strong neon glow for cube lines -->
+    <filter id="neonGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b1"/>
+      <feGaussianBlur stdDeviation="7" result="b2"/>
       <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Subtle glow for text -->
-    <filter id="textGlow" x="-10%" y="-40%" width="120%" height="180%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <!-- Title glow -->
+    <filter id="titleGlow" x="-8%" y="-50%" width="116%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Stroke glow for title -->
-    <filter id="titleGlow" x="-5%" y="-30%" width="110%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Clip to card bounds -->
-    <clipPath id="clip">
-      <rect width="900" height="280" rx="0" ry="0"/>
-    </clipPath>
+    <clipPath id="clip"><rect width="900" height="280"/></clipPath>
   </defs>
 
   <!-- ── BACKGROUND ── -->
-  <rect width="900" height="280" fill="url(#bg)"/>
+  <rect width="900" height="280" fill="url(#bgGrad)"/>
+  <rect width="900" height="280" fill="url(#centerLight)"/>
 
-  <!-- ── GRID SCANLINES (subtle depth) ── -->
-  <g opacity="0.04" clip-path="url(#clip)">
-    <line x1="0" y1="56"  x2="900" y2="56"  stroke="#00d4e8" stroke-width="1"/>
-    <line x1="0" y1="112" x2="900" y2="112" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="0" y1="168" x2="900" y2="168" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="0" y1="224" x2="900" y2="224" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="150" y1="0" x2="150" y2="280" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="300" y1="0" x2="300" y2="280" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="450" y1="0" x2="450" y2="280" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="600" y1="0" x2="600" y2="280" stroke="#00d4e8" stroke-width="1"/>
-    <line x1="750" y1="0" x2="750" y2="280" stroke="#00d4e8" stroke-width="1"/>
+  <!-- ── GRID (very faint depth lines) ── -->
+  <g opacity="0.06" clip-path="url(#clip)">
+    <line x1="0"   y1="93"  x2="900" y2="93"  stroke="#22d3ee" stroke-width="1"/>
+    <line x1="0"   y1="140" x2="900" y2="140" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="0"   y1="187" x2="900" y2="187" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="225" y1="0"   x2="225" y2="280" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="450" y1="0"   x2="450" y2="280" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="675" y1="0"   x2="675" y2="280" stroke="#22d3ee" stroke-width="1"/>
   </g>
 
-  <!-- ════════════════════════════════════════════════
-       ROTATING 3-D WIREFRAME CUBE  (centred ~x=780 y=140)
-       Uses SMIL animation on transform to rotate the cube group.
-       We pre-project 8 cube vertices at different rotation angles
-       and animate between them using animateTransform.
-       Since SMIL can't do true 3-D matrix math, we simulate
-       continuous rotation with a keyframe SVG approach:
-       — The cube group rotates in 2-D around its centre.
-       — A second offset group rotates at a different speed to
-         create the illusion of 3-D tumbling.
-  ════════════════════════════════════════════════ -->
-
-  <!-- Outer spin layer -->
-  <g transform="translate(765, 140)" opacity="0.55" filter="url(#glow)" clip-path="url(#clip)">
+  <!-- ════════════════════════════════════════════
+       WIREFRAME CUBE — RIGHT SIDE — centred (730,138)
+       Pure line elements, ZERO fills → no wedge artifacts.
+       12 edges: 4 front, 4 back, 4 depth connectors.
+       Front half-size=85, back offset (+35,-35).
+  ════════════════════════════════════════════ -->
+  <g transform="translate(730,138)" opacity="0.80" filter="url(#neonGlow)" clip-path="url(#clip)">
     <animateTransform
       attributeName="transform"
       type="rotate"
-      from="0 0 0"
-      to="360 0 0"
-      dur="14s"
-      repeatCount="indefinite"
-      additive="sum"/>
+      from="0"
+      to="360"
+      dur="11s"
+      repeatCount="indefinite"/>
 
-    <!-- Inner counter-axis tilt — creates tumbling feel -->
-    <g>
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0 0 0"
-        to="-360 0 0"
-        dur="22s"
-        repeatCount="indefinite"
-        additive="sum"/>
+    <!-- FRONT FACE — 4 edges (bright cyan) -->
+    <line x1="-85" y1="-85" x2=" 85" y2="-85" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1=" 85" y1="-85" x2=" 85" y2=" 85" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1=" 85" y1=" 85" x2="-85" y2=" 85" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="-85" y1=" 85" x2="-85" y2="-85" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
 
-      <!-- CUBE FACES (filled, semi-transparent) -->
-      <!-- Front face -->
-      <polygon points="-60,-60 60,-60 60,60 -60,60"
-               fill="#001824" fill-opacity="0.35"
-               stroke="#00d4e8" stroke-width="1.4"/>
-      <!-- Top face (isometric offset) -->
-      <polygon points="-60,-60 60,-60 80,-80 -40,-80"
-               fill="#002535" fill-opacity="0.3"
-               stroke="#00d4e8" stroke-width="1.2"/>
-      <!-- Right face -->
-      <polygon points="60,-60 80,-80 80,40 60,60"
-               fill="#001020" fill-opacity="0.3"
-               stroke="#00d4e8" stroke-width="1.2"/>
+    <!-- BACK FACE — 4 edges (dimmer teal) -->
+    <line x1="-50" y1="-120" x2="120" y2="-120" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="120" y1="-120" x2="120" y2="  50" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="120" y1="  50" x2="-50" y2="  50" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="-50" y1="  50" x2="-50" y2="-120" stroke="#0e7490" stroke-width="1.6" stroke-linecap="round"/>
 
-      <!-- CUBE EDGES (wireframe) -->
-      <!-- Front square -->
-      <rect x="-60" y="-60" width="120" height="120"
-            fill="none" stroke="#22d3ee" stroke-width="1.6"/>
-      <!-- Back square (offset) -->
-      <rect x="-40" y="-80" width="120" height="120"
-            fill="none" stroke="#0e7490" stroke-width="1.2"/>
-      <!-- Connecting depth edges -->
-      <line x1="-60" y1="-60" x2="-40" y2="-80" stroke="#22d3ee" stroke-width="1.2"/>
-      <line x1=" 60" y1="-60" x2=" 80" y2="-80" stroke="#22d3ee" stroke-width="1.2"/>
-      <line x1=" 60" y1=" 60" x2=" 80" y2=" 40" stroke="#22d3ee" stroke-width="1.2"/>
-      <line x1="-60" y1=" 60" x2="-40" y2=" 40" stroke="#22d3ee" stroke-width="1.2"/>
+    <!-- DEPTH EDGES — connecting front to back (medium brightness) -->
+    <line x1="-85" y1="-85" x2="-50" y2="-120" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1=" 85" y1="-85" x2="120" y2="-120" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1=" 85" y1=" 85" x2="120" y2="  50" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-85" y1=" 85" x2="-50" y2="  50" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
 
-      <!-- Corner accent dots -->
-      <circle cx="-60" cy="-60" r="2.5" fill="#67e8f9"/>
-      <circle cx=" 60" cy="-60" r="2.5" fill="#67e8f9"/>
-      <circle cx=" 60" cy=" 60" r="2.5" fill="#67e8f9"/>
-      <circle cx="-60" cy=" 60" r="2.5" fill="#67e8f9"/>
-      <circle cx="-40" cy="-80" r="2"   fill="#0e7490"/>
-      <circle cx=" 80" cy="-80" r="2"   fill="#0e7490"/>
-      <circle cx=" 80" cy=" 40" r="2"   fill="#0e7490"/>
-      <circle cx="-40" cy=" 40" r="2"   fill="#0e7490"/>
-    </g>
+    <!-- VERTEX DOTS — front corners -->
+    <circle cx="-85" cy="-85" r="4" fill="#67e8f9"/>
+    <circle cx=" 85" cy="-85" r="4" fill="#67e8f9"/>
+    <circle cx=" 85" cy=" 85" r="4" fill="#67e8f9"/>
+    <circle cx="-85" cy=" 85" r="4" fill="#67e8f9"/>
+
+    <!-- VERTEX DOTS — back corners -->
+    <circle cx="-50" cy="-120" r="3" fill="#0e7490"/>
+    <circle cx="120" cy="-120" r="3" fill="#0e7490"/>
+    <circle cx="120" cy="  50" r="3" fill="#0e7490"/>
+    <circle cx="-50" cy="  50" r="3" fill="#0e7490"/>
   </g>
 
-  <!-- Secondary smaller cube (top-left accent) -->
-  <g transform="translate(95, 68)" opacity="0.25" filter="url(#glow)" clip-path="url(#clip)">
+  <!-- SMALL ACCENT CUBE — top-left, counter-spin -->
+  <g transform="translate(120,80)" opacity="0.35" filter="url(#neonGlow)" clip-path="url(#clip)">
     <animateTransform
       attributeName="transform"
       type="rotate"
-      from="360 0 0"
-      to="0 0 0"
+      from="0"
+      to="-360"
       dur="18s"
-      repeatCount="indefinite"
-      additive="sum"/>
+      repeatCount="indefinite"/>
 
-    <rect x="-28" y="-28" width="56" height="56"
-          fill="none" stroke="#22d3ee" stroke-width="1.2"/>
-    <rect x="-18" y="-38" width="56" height="56"
-          fill="none" stroke="#0e7490" stroke-width="0.9"/>
-    <line x1="-28" y1="-28" x2="-18" y2="-38" stroke="#22d3ee" stroke-width="0.9"/>
-    <line x1=" 28" y1="-28" x2=" 38" y2="-38" stroke="#22d3ee" stroke-width="0.9"/>
-    <line x1=" 28" y1=" 28" x2=" 38" y2=" 18" stroke="#22d3ee" stroke-width="0.9"/>
-    <line x1="-28" y1=" 28" x2="-18" y2=" 18" stroke="#22d3ee" stroke-width="0.9"/>
+    <!-- front -->
+    <line x1="-32" y1="-32" x2=" 32" y2="-32" stroke="#22d3ee" stroke-width="1.4"/>
+    <line x1=" 32" y1="-32" x2=" 32" y2=" 32" stroke="#22d3ee" stroke-width="1.4"/>
+    <line x1=" 32" y1=" 32" x2="-32" y2=" 32" stroke="#22d3ee" stroke-width="1.4"/>
+    <line x1="-32" y1=" 32" x2="-32" y2="-32" stroke="#22d3ee" stroke-width="1.4"/>
+    <!-- back -->
+    <line x1="-18" y1="-46" x2=" 46" y2="-46" stroke="#0e7490" stroke-width="1"/>
+    <line x1=" 46" y1="-46" x2=" 46" y2=" 18" stroke="#0e7490" stroke-width="1"/>
+    <line x1=" 46" y1=" 18" x2="-18" y2=" 18" stroke="#0e7490" stroke-width="1"/>
+    <line x1="-18" y1=" 18" x2="-18" y2="-46" stroke="#0e7490" stroke-width="1"/>
+    <!-- depth -->
+    <line x1="-32" y1="-32" x2="-18" y2="-46" stroke="#22d3ee" stroke-width="1"/>
+    <line x1=" 32" y1="-32" x2=" 46" y2="-46" stroke="#22d3ee" stroke-width="1"/>
+    <line x1=" 32" y1=" 32" x2=" 46" y2=" 18" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="-32" y1=" 32" x2="-18" y2=" 18" stroke="#22d3ee" stroke-width="1"/>
   </g>
 
-  <!-- ── STROKE DIVIDER LINE ── -->
-  <line x1="0" y1="277" x2="900" y2="277" stroke="#00d4e8" stroke-width="2" opacity="0.5"/>
-  <line x1="0" y1="3"   x2="900" y2="3"   stroke="#00d4e8" stroke-width="2" opacity="0.3"/>
+  <!-- ── BORDER LINES ── -->
+  <line x1="0" y1="2"   x2="900" y2="2"   stroke="#00d4e8" stroke-width="2.5" opacity="0.5"/>
+  <line x1="0" y1="278" x2="900" y2="278" stroke="#00d4e8" stroke-width="2.5" opacity="0.5"/>
 
-  <!-- ── TITLE TEXT ── -->
+  <!-- ── MAIN TITLE — rendered LAST so always on top ── -->
   <text
-    x="450" y="130"
+    x="420" y="148"
     text-anchor="middle"
-    font-family="'Segoe UI', Arial, sans-serif"
+    font-family="'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif"
     font-weight="900"
-    font-size="72"
-    letter-spacing="6"
+    font-size="98"
+    letter-spacing="2"
     fill="#ffffff"
     stroke="#00d4e8"
-    stroke-width="1.5"
+    stroke-width="2.5"
     filter="url(#titleGlow)"
     paint-order="stroke fill">
     AMAN AMARJIT
   </text>
 
-  <!-- Fade-in animation on title -->
-  <animate
-    xlink:href="#title"
-    attributeName="opacity"
-    from="0" to="1"
-    dur="1.2s"
-    fill="freeze"/>
-
   <!-- ── SUBTITLE ── -->
   <text
-    x="450" y="175"
+    x="420" y="194"
     text-anchor="middle"
-    font-family="'Segoe UI', Arial, sans-serif"
-    font-weight="400"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="300"
     font-size="17"
-    letter-spacing="1.5"
-    fill="#67e8f9"
-    opacity="0.90">
-    AI Engineer · Systems Builder · Security Researcher
-  </text>
-
-  <!-- ── BOTTOM ACCENT TAG ── -->
-  <text
-    x="450" y="238"
-    text-anchor="middle"
-    font-family="'Courier New', monospace"
-    font-size="12"
-    fill="#0e7490"
     letter-spacing="3"
-    opacity="0.7">
-    ◈  RESHAPE THE ALGORITHM  ◈
+    fill="#67e8f9"
+    opacity="0.85">
+    AI Engineer  ·  Systems Builder  ·  Security Researcher
   </text>
 
-  <!-- Pulsing underline accent -->
-  <rect x="310" y="248" width="280" height="1.5" fill="#00d4e8" rx="1">
-    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+  <!-- ── BOTTOM BRAND TAG ── -->
+  <text
+    x="420" y="248"
+    text-anchor="middle"
+    font-family="'Courier New', 'Lucida Console', monospace"
+    font-size="11"
+    font-weight="400"
+    fill="#0e7490"
+    letter-spacing="5"
+    opacity="0.7">
+    ◈   RESHAPE THE ALGORITHM   ◈
+  </text>
+
+  <!-- Pulsing accent line -->
+  <rect x="280" y="257" width="280" height="1.5" fill="#00d4e8" rx="1">
+    <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="width"   values="280;340;280"  dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x"       values="280;250;280"  dur="3s" repeatCount="indefinite"/>
   </rect>
 </svg>
