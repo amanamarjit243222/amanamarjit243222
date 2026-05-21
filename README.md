@@ -131,7 +131,7 @@
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Aman-Amarjit&theme=transparent&hide_border=true&background=060f1c&ring=06b6d4&fire=22d3ee&currStreakLabel=67e8f9&sideLabels=67e8f9&dates=3d6e7e&currStreakNum=e0f7ff&sideNums=e0f7ff&stroke=0e7490"/>
+<img src="https://streak-stats.demolab.com?user=Aman-Amarjit&theme=transparent&hide_border=true&background=060f1c&ring=06b6d4&fire=22d3ee&currStreakLabel=67e8f9&sideLabels=67e8f9&dates=3d6e7e&currStreakNum=e0f7ff&sideNums=e0f7ff&stroke=0e7490"/>
 
 </div>
 
